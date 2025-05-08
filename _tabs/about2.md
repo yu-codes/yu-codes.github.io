@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 1
+order: 5
 title: Resume2
 ---
 <!-- ===== 單欄 Header 區 ===== -->
