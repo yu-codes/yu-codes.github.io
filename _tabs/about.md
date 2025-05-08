@@ -2,6 +2,7 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 1
+title: Resume
 ---
 <!-- ===== 單欄 Header 區 ===== -->
 <div class="row">
@@ -13,7 +14,7 @@ order: 1
 </div>
 
 <!-- ====== 既有雙欄區 ====== -->
-<div class="row g-4">
+<div class="row g-4" markdown="1">
 
   <!-- 左欄 -->
   <aside class="col-md-4" markdown="1">
@@ -51,9 +52,9 @@ order: 1
 - **Department Volleyball Team** — Captain (2024)
   </aside>
 
-
   <!-- 右欄 -->
   <main class="col-md-8" markdown="1">
+
 ### Project/ Experience
 
 **AI 技術文章摘要管線專案 (2025 / 05)**
@@ -80,7 +81,7 @@ order: 1
 Taipei, Taiwan | Sep 2021 – Feb 2025
 
 - **Thesis:** *Development of Machine‑Learning‑Based Weather Analog Methods for Predicting Extreme Precipitation Events*
-*Relevant coursework: Machine Learning, Distributed Systems, Cloud Computing, Numerical Weather Prediction
+*Relevant coursework: Machine Learning, Distributed Systems, Cloud Computing, Numerical Weather Prediction*
 
 **National Taiwan University (NTU)** — B.S. in Civil Engineering
 Taipei, Taiwan | Sep 2018 – Aug 2021
