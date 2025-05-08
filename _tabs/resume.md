@@ -7,10 +7,10 @@ layout: page           # 預設就是 page，可保留
 
 <!-- ===== 單欄 Header ===== -->
 <div class="row">
-  <div class="col-12 text-center" markdown="1">
+  <div class="col-12" markdown="1">
 
 ## YuHan · Backend / AI Cloud Engineer
-
+Backend / AI Cloud Engineer who transforms ideas into production‑grade services. I build containerized Python + FastAPI backends on AWS and GCP, wiring them into fully automated CI/CD pipelines. My M.S. thesis at National Taiwan University pioneered machine‑learning weather‑analog methods for extreme‑rainfall forecasting, and I’ve since shipped an AI article‑summarization pipeline and an email order‑automation system that cut processing time ten‑fold. I’m driven to keep pushing the edge of large‑model optimization and resilient, scalable cloud solutions.
   </div>
 </div>
 
@@ -35,8 +35,9 @@ layout: page           # 預設就是 page，可保留
 - **Cloud Service** AWS ★ · GCP  
 
 ### Certifications
-- AWS Certified Developer Associate (DVA‑C02)  
-- AWS Certified AI Practitioner (AIF‑C01)  
+- [AWS Certified Developer – Associate (2025)](https://www.credly.com/badges/cf591085-60b2-443a-ab63-037804787827/public_url)
+- [AWS Certified AI Practitioner (2024)](https://www.credly.com/badges/5dae0a6b-0bc3-432e-8b9c-2d7d6f660d5b/public_url)
+- [AWS Certified AI Practitioner Early Adopter](https://www.credly.com/badges/538b46bc-fa22-4d95-a1ee-0aa4e2ea6a0c/public_url)
 
 ### Campus Leadership
 - **College of Science Student Association** — Vice President (AY 2017 – 2018)  
