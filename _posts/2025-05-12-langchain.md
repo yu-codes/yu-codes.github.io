@@ -1,7 +1,7 @@
 ---
 title: "一文搞懂 LangChain：架構、模組、實作與應用全解析"
 date: 2025-05-12 19:40:00 +0800
-categories: [AI, LLM]
+categories: [Machine Learning]
 tags: [LangChain, LLM, AI 應用, Python, Chain of Thought]
 ---
 

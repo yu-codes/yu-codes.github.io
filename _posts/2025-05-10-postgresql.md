@@ -2,7 +2,7 @@
 title: "PostgreSQL 深入指南：從入門到面試實戰"
 date: 2025-05-10 17:30:00 +0800
 categories: [Databases]
-tags: [PostgreSQL, SQL, Database Management, 面試, 資料庫]
+tags: [PostgreSQL, SQL, Database Management, 資料庫]
 ---
 
 # PostgreSQL 深入指南：從入門到面試實戰
