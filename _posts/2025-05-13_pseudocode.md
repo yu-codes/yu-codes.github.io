@@ -1,7 +1,7 @@
 ---
 title: "技術面試兩大實戰挑戰：Pseudocode 語法全收錄 + Python 環境建立完全指南"
 date: 2025-05-13 15:00:00 +0800
-categories: [Interview, Python]
+categories: [Interview]
 tags: [Pseudocode, Python, Algorithm, 開發環境]
 ---
 
