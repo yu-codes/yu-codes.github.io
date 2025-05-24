@@ -135,7 +135,6 @@ print("稀疏矩陣非零元素數量:", sparse.nnz)
 
 ## 延伸閱讀與資源
 
-* [Stanford CS231n: Numeric Stability](http://cs231n.stanford.edu/slides/2023/cs231n_2023_lecture7.pdf)
 * [Scipy Sparse Matrix 官方文件](https://docs.scipy.org/doc/scipy/reference/sparse.html)
 * [PyTorch 稀疏張量](https://pytorch.org/docs/stable/sparse.html)
 * [Deep Learning Book: Numerical Computation](https://www.deeplearningbook.org/contents/numerical.html)

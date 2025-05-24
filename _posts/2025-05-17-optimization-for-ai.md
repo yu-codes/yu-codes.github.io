@@ -114,7 +114,6 @@ for epoch in range(20):
 
 ## 延伸閱讀與資源
 
-* [Stanford CS231n: Optimization](http://cs231n.stanford.edu/slides/2023/cs231n_2023_lecture6.pdf)
 * [Adam 論文](https://arxiv.org/abs/1412.6980)
 * [PyTorch Optimizer 官方文件](https://pytorch.org/docs/stable/optim.html)
 

@@ -206,7 +206,6 @@ print("交叉熵損失:", cross_entropy([1, 0, 0], probs))
 ## 延伸閱讀與資源
 
 * [Deep Learning Book: Information Theory](https://www.deeplearningbook.org/contents/information-theory.html)
-* [Stanford CS231n: Loss Functions](http://cs231n.stanford.edu/slides/2023/cs231n_2023_lecture7.pdf)
 * [StatQuest: Cross Entropy, KL Divergence](https://www.youtube.com/watch?v=ErfnhcEV1O8)
 * [Scipy.stats 熵與距離文件](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.entropy.html)
 
