@@ -10,7 +10,8 @@ layout: page           # 預設就是 page，可保留
   <div class="col-12" markdown="1">
 
 ## YuHan · Backend / AI Cloud Engineer
-Backend / AI Cloud Engineer who transforms ideas into production‑grade services. I build containerized Python + FastAPI backends on AWS and GCP, wiring them into fully automated CI/CD pipelines. My M.S. thesis at National Taiwan University pioneered machine‑learning weather‑analog methods for extreme‑rainfall forecasting, and I’ve since shipped an AI article‑summarization pipeline and an email order‑automation system that cut processing time ten‑fold. I’m driven to keep pushing the edge of large‑model optimization and resilient, scalable cloud solutions.
+M.S. in Civil Engineering from National Taiwan University, with two years of experience in backend development and AI applications. Proficient in building containerized backends using Python and FastAPI, and familiar with Hugging Face, FAISS, and RAG system workflows. Hands-on experience with AWS (certified) and GCP. Graduate thesis focused on using machine learning methods to predict extreme rainfall events, strengthening skills in data processing and model development. Independently built an AI-powered article summarization system and an automated order-processing service, delivering end-to-end implementation from data ingestion to model inference, API integration, and message delivery. Passionate about continuing to work in AI engineering and model deployment.
+
   </div>
 </div>
 
@@ -48,32 +49,31 @@ Backend / AI Cloud Engineer who transforms ideas into production‑grade service
 </aside><main class="col-md-8" markdown="1">
 
 ### Projects / Experience
-**AI 技術文章摘要管線專案 (2025/05)**  
-*FastAPI · Hugging Face Transformers · PostgreSQL · Notion API · LINE Messaging API · Docker*
+**Side-Project – LINE Chatbot with RAG Backend (2025/05)**  
+*FastAPI · LangChain · Hugging Face · PostgreSQL + pgvector · Docker · LINE Messaging API*
 
-- 4 週內獨立完成端到端開發：爬取 → 摘要 → 持久化 → 即時推播。  
-- **FastAPI** 非同步爬蟲 + **HF 模型** 產生 JSON 摘要，延遲 < 3 s/篇。  
-- **Notion API** 與 **PostgreSQL** 雙寫入，支援 REST 查詢與後續分析。  
-- 整合 **LINE Bot** 自動推送最新摘要，省去人工整理流程。  
+- Designed & implemented a **Retrieval-Augmented Generation pipeline**: LangChain orchestrates embeddings → pgvector search → LLM answer synthesis, exposed via **FastAPI REST / webhook** routes.  
+- Built **LINE Messaging Bot** interface: verifies signatures, forwards user queries to RAG backend, streams answers back to chat.  
+- Developed **embedding worker container**: chunks PDFs, generates sentence-transformer vectors, and bulk-loads into **PostgreSQL 16 + pgvector**.  
+- **Containerised the entire stack** with multi-stage Dockerfiles & `docker-compose`; one command launches API, worker, DB, and **ngrok tunnel**.  
+- Organised codebase for clarity: `app/` (API), `rag/` (retrieval), `crawler/` (fetch/schedule), `data/` (vectors/files), `models/` (GGUF), with start scripts & docs.
 
-**Software Engineering Intern @ 新創公司 (2021/08 – 2023/11)**  
+**Software Engineering Intern @ Startup (2021/08 – 2023/11)**  
 *Python · Gmail API · Google Vision API · Google Sheets API · Google Chat Webhooks · Docker*
 
-- **Order Recognition & Placement System**：獨立設計、開發並上線，整合全自動 Email 下訂。  
-- 利用 **Gmail API** 擷取訂單 → **Vision API OCR** 解析，關鍵欄位準確率 > 95 %。  
-- **Google Sheets API** 比對 SKU/價格，避免下單錯誤；全流程從 2 h 縮至 < 10 min。  
-- **Google Chat webhook** 秒級推播，錯失訂單事件歸零，節省 ≈ 20 h/週人力。  
+- **Order Recognition & Placement System**：Independently designed, developed, and launched a fully automated email ordering system.  
+- Used **Gmail API** to fetch orders → parsed with **Vision API OCR**, achieving key field accuracy > 95 %.  
+- Verified SKU/pricing via **Google Sheets API** to prevent order errors; reduced full process from 2 h to < 10 min.  
+- **Google Chat webhook** instant alerts; missed order incidents reduced to zero, saving ≈ 20 h/week of manual effort.
 
 ### Education
 **National Taiwan University (NTU)** — *M.S. in Civil Engineering*  
 Taipei, Taiwan | Sep 2021 – Feb 2025  
 - **Thesis:** *Development of Machine‑Learning‑Based Weather Analog Methods for Predicting Extreme Precipitation Events*  
-- *Relevant coursework:* Machine Learning, Distributed Systems, Cloud Computing, Numerical Weather Prediction  
 
 **National Taiwan University (NTU)** — *B.S. in Civil Engineering*  
-Taipei, Taiwan | Sep 2018 – Aug 2021  
-- **Project – VegPrice‑LSTM**：多變量 LSTM 預測每日蔬菜批發價 (Python/TensorFlow)。  
-- **Project – StructViz**：Unity 3D (C#) 視覺化樑柱受力變形，輔助結構力學教學。  
-- **Competition – Asia Cup University Mechanics Contest**：負責桁架設計與載重測試。  
-
+Taipei, Taiwan | Sep 2016 – Aug 2021  
+- **Project – VegPrice‑LSTM**(2021)：Multivariate LSTM model for forecasting daily wholesale vegetable prices (Python/TensorFlow).  
+- **Project – StructViz**(2021)：Unity 3D (C#) application visualizing beam and column deformation to support structural mechanics education.  
+- **Competition – Asia Cup University Mechanics Contest** (2019)：Won 2nd place; responsible for truss design and load testing.
 </main></div>
