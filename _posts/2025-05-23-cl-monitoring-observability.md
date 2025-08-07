@@ -1,7 +1,7 @@
 ---
 title: "監控・觀測性全攻略：CloudWatch、Stackdriver、Prometheus、Loki、Trace"
 date: 2025-05-23 22:00:00 +0800
-categories: [雲端部署與服務]
+categories: [Cloud Deployment & Services]
 tags: [監控, 觀測性, CloudWatch, Stackdriver, Azure Monitor, Prometheus, Grafana, Loki, OpenTelemetry, Jaeger]
 ---
 
@@ -93,13 +93,13 @@ scrape_configs:
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| CloudWatch/Stackdriver | 功能與差異？ |
-| Prometheus/Grafana | 指標設計與告警？ |
-| Loki/OpenTelemetry | 日誌/追蹤設計？ |
-| Jaeger Trace | 分散式追蹤原理？ |
-| 多層監控     | 如何設計？ |
+| 主題                   | 常見問題         |
+| ---------------------- | ---------------- |
+| CloudWatch/Stackdriver | 功能與差異？     |
+| Prometheus/Grafana     | 指標設計與告警？ |
+| Loki/OpenTelemetry     | 日誌/追蹤設計？  |
+| Jaeger Trace           | 分散式追蹤原理？ |
+| 多層監控               | 如何設計？       |
 
 ---
 

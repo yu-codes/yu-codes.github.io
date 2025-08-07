@@ -1,7 +1,7 @@
 ---
 title: "Feature Store 設計全攻略：Feast、Tecton、SageMaker、表設計與一致性"
 date: 2025-05-22 16:00:00 +0800
-categories: [大型系統設計與MLOps]
+categories: [System Design & MLOps]
 tags: [Feature Store, Feast, Tecton, SageMaker, Offline Table, Online Table, Entity Key, TTL, Join Graph, 特徵一致性]
 ---
 
@@ -107,13 +107,13 @@ user_features = FeatureView(
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Feature Store | 作用與設計要點？ |
-| Offline/Online Table | 差異與同步？ |
-| Entity Key/TTL | 如何設計？ |
-| Join Graph    | 有何作用？ |
-| 特徵一致性   | 如何驗證與同步？ |
+| 主題                 | 常見問題         |
+| -------------------- | ---------------- |
+| Feature Store        | 作用與設計要點？ |
+| Offline/Online Table | 差異與同步？     |
+| Entity Key/TTL       | 如何設計？       |
+| Join Graph           | 有何作用？       |
+| 特徵一致性           | 如何驗證與同步？ |
 
 ---
 

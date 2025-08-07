@@ -1,7 +1,7 @@
 ---
 title: "集成學習全攻略：Bagging、Boosting、Stacking 與超學習器"
 date: 2025-05-18 15:00:00 +0800
-categories: [機器學習理論]
+categories: [Machine Learning]
 tags: [集成學習, Bagging, Boosting, Random Forest, XGBoost, Stacking, Blending, 超學習器]
 ---
 
@@ -116,13 +116,13 @@ print("Stacking 預測:", stack.predict(X[:5]))
 
 ## 面試熱點與常見誤區
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Bagging      | 為何能降低變異？ |
-| Random Forest| 特徵重要性如何計算？ |
-| Boosting     | 與 Bagging 差異？ |
-| XGBoost      | 為何表現好？有哪些 trick？ |
-| Stacking     | 如何避免資料洩漏？ |
+| 主題          | 常見問題                   |
+| ------------- | -------------------------- |
+| Bagging       | 為何能降低變異？           |
+| Random Forest | 特徵重要性如何計算？       |
+| Boosting      | 與 Bagging 差異？          |
+| XGBoost       | 為何表現好？有哪些 trick？ |
+| Stacking      | 如何避免資料洩漏？         |
 
 ### 常見誤區
 

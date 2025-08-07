@@ -1,7 +1,7 @@
 ---
 title: "統計學在 ML 實務：模型評估、偏差-變異與信賴區間全攻略"
 date: 2025-05-17 19:00:00 +0800
-categories: [AI 數學基礎]
+categories: [AI Math Foundation]
 tags: [統計學, 偏差-變異, 評估指標, 置信帶, 預測區間]
 ---
 
@@ -49,12 +49,12 @@ plt.legend(); plt.title("Bias-Variance Trade-off"); plt.show()
 
 ## 評估指標：MSE, MAE, R², AUC
 
-| 指標   | 公式 | 適用場景 | 直覺說明 |
-|--------|------|----------|----------|
-| MSE    | $\frac{1}{n}\sum(y_i-\hat{y}_i)^2$ | 回歸 | 懲罰大誤差 |
-| MAE    | $\frac{1}{n}\sum|y_i-\hat{y}_i|$ | 回歸 | 對離群值不敏感 |
-| R²     | $1-\frac{\sum(y_i-\hat{y}_i)^2}{\sum(y_i-\bar{y})^2}$ | 回歸 | 解釋變異比例 |
-| AUC    | 曲線下方面積 | 分類 | 區分正負樣本能力 |
+| 指標 | 公式                                                  | 適用場景      | 直覺說明         |
+| ---- | ----------------------------------------------------- | ------------- | ---------------- |
+| MSE  | $\frac{1}{n}\sum(y_i-\hat{y}_i)^2$                    | 回歸          | 懲罰大誤差       |
+| MAE  | $\frac{1}{n}\sum                                      | y_i-\hat{y}_i | $                | 回歸 | 對離群值不敏感 |
+| R²   | $1-\frac{\sum(y_i-\hat{y}_i)^2}{\sum(y_i-\bar{y})^2}$ | 回歸          | 解釋變異比例     |
+| AUC  | 曲線下方面積                                          | 分類          | 區分正負樣本能力 |
 
 ```python
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score, roc_auc_score
@@ -115,12 +115,12 @@ print("預測區間範例:", pred_int.head())
 
 ## 常見面試熱點整理
 
-| 熱點主題         | 面試常問問題 |
-|------------------|-------------|
-| Bias-Variance    | 權衡如何實作與可視化？ |
-| 評估指標         | 何時選 MSE/MAE/AUC？ |
-| 置信帶/預測區間  | 差異與解讀？         |
-| R²               | 何時不適用？         |
+| 熱點主題        | 面試常問問題           |
+| --------------- | ---------------------- |
+| Bias-Variance   | 權衡如何實作與可視化？ |
+| 評估指標        | 何時選 MSE/MAE/AUC？   |
+| 置信帶/預測區間 | 差異與解讀？           |
+| R²              | 何時不適用？           |
 
 ---
 

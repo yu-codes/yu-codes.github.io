@@ -1,7 +1,7 @@
 ---
 title: "統計推論 Toolkit：AI 必備的估計與檢定方法"
 date: 2025-05-17 16:00:00 +0800
-categories: [AI 數學基礎]
+categories: [AI Math Foundation]
 tags: [統計推論, MLE, MAP, 假設檢定, Bootstrap, 交叉驗證]
 ---
 
@@ -35,11 +35,11 @@ print("95% 信賴區間:", conf_int)
 - **最大後驗估計（MAP）**：結合先驗知識與資料，選擇最可能的參數。
 - **貝氏估計**：產生參數的完整後驗分布，反映不確定性。
 
-| 方法 | 公式 | 直覺說明 |
-|------|------|----------|
-| MLE  | $\hat{\theta}_{MLE} = \arg\max_\theta P(D|\theta)$ | 只看資料 |
-| MAP  | $\hat{\theta}_{MAP} = \arg\max_\theta P(D|\theta)P(\theta)$ | 加入先驗 |
-| 貝氏 | $P(\theta|D) = \frac{P(D|\theta)P(\theta)}{P(D)}$ | 得到分布 |
+| 方法 | 公式                                      | 直覺說明          |
+| ---- | ----------------------------------------- | ----------------- |
+| MLE  | $\hat{\theta}_{MLE} = \arg\max_\theta P(D | \theta)$          | 只看資料                 |
+| MAP  | $\hat{\theta}_{MAP} = \arg\max_\theta P(D | \theta)P(\theta)$ | 加入先驗                 |
+| 貝氏 | $P(\theta                                 | D) = \frac{P(D    | \theta)P(\theta)}{P(D)}$ | 得到分布 |
 
 ---
 
@@ -77,12 +77,12 @@ print("Bootstrap 樣本均值分布範例:", boot_means[:5])
 
 ## 常見面試熱點整理
 
-| 熱點主題         | 面試常問問題 |
-|------------------|-------------|
-| MLE/MAP          | 兩者差異與應用？ |
-| 假設檢定         | p 值是什麼？如何解讀？ |
-| Bootstrap        | 何時用？有什麼優缺點？ |
-| 交叉驗證         | 為何能提升模型泛化？   |
+| 熱點主題  | 面試常問問題           |
+| --------- | ---------------------- |
+| MLE/MAP   | 兩者差異與應用？       |
+| 假設檢定  | p 值是什麼？如何解讀？ |
+| Bootstrap | 何時用？有什麼優缺點？ |
+| 交叉驗證  | 為何能提升模型泛化？   |
 
 ---
 

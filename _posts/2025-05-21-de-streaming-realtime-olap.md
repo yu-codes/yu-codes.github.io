@@ -1,7 +1,7 @@
 ---
 title: "流式處理與實時分析全攻略：Exactly-once、Window、OLAP with Pinot/Druid/ClickHouse"
 date: 2025-05-21 19:00:00 +0800
-categories: [數據工程]
+categories: [Data Engineering]
 tags: [流式處理, Streaming, Exactly-once, Checkpoint, Window Aggregation, OLAP, Pinot, Druid, ClickHouse, Tumbling, Sliding]
 ---
 
@@ -71,11 +71,11 @@ env.set_stream_time_characteristic(TimeCharacteristic.EventTime)
 - 高效欄式 OLAP，支援大規模聚合與即時查詢
 - 適合日誌分析、廣告、金融風控
 
-| 系統       | 主要特點         | 適用場景         |
-|------------|------------------|------------------|
-| Pinot      | 低延遲、即時查詢 | 監控、推薦、指標 |
-| Druid      | 流批一體、分區靈活| Dashboard、時序  |
-| ClickHouse | 高效欄式、聚合快 | 日誌、金融、廣告 |
+| 系統       | 主要特點           | 適用場景         |
+| ---------- | ------------------ | ---------------- |
+| Pinot      | 低延遲、即時查詢   | 監控、推薦、指標 |
+| Druid      | 流批一體、分區靈活 | Dashboard、時序  |
+| ClickHouse | 高效欄式、聚合快   | 日誌、金融、廣告 |
 
 ---
 
@@ -106,13 +106,13 @@ env.set_stream_time_characteristic(TimeCharacteristic.EventTime)
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Exactly-once | 如何實現？與 At-least-once 差異？ |
-| Window 聚合  | Tumbling vs Sliding 差異？ |
-| Pinot/Druid/ClickHouse | 適用場景與優缺點？ |
-| Checkpoint   | 如何設計恢復流程？ |
-| 流式架構     | 如何保證低延遲與高吞吐？ |
+| 主題                   | 常見問題                          |
+| ---------------------- | --------------------------------- |
+| Exactly-once           | 如何實現？與 At-least-once 差異？ |
+| Window 聚合            | Tumbling vs Sliding 差異？        |
+| Pinot/Druid/ClickHouse | 適用場景與優缺點？                |
+| Checkpoint             | 如何設計恢復流程？                |
+| 流式架構               | 如何保證低延遲與高吞吐？          |
 
 ---
 

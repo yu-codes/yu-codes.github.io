@@ -1,7 +1,7 @@
 ---
 title: "數據工程挑戰題庫：13 章經典面試題與解法提示"
 date: 2025-05-21 23:59:00 +0800
-categories: [數據工程]
+categories: [Data Engineering]
 tags: [面試題, 數據工程, 解題技巧, 白板題, 口試]
 ---
 

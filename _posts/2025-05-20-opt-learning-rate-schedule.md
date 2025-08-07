@@ -1,7 +1,7 @@
 ---
 title: "學習率策略全解析：Step, Cosine, Cyclical, Warm-up 與 LR Finder"
 date: 2025-05-20 14:00:00 +0800
-categories: [模型訓練與優化]
+categories: [Machine Learning]
 tags: [學習率, Learning Rate, Step Decay, Cosine Annealing, Warm-up, Cyclical, One-Cycle, LR Finder]
 ---
 
@@ -106,13 +106,13 @@ scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr=0.1, steps_per
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Step vs Cosine | 差異與適用場景？ |
-| Warm-up      | 為何能提升穩定性？ |
-| Cyclical/One-Cycle | 原理與優勢？ |
-| LR Finder    | 如何選最佳學習率？ |
-| 學習率策略   | 對收斂與泛化有何影響？ |
+| 主題               | 常見問題               |
+| ------------------ | ---------------------- |
+| Step vs Cosine     | 差異與適用場景？       |
+| Warm-up            | 為何能提升穩定性？     |
+| Cyclical/One-Cycle | 原理與優勢？           |
+| LR Finder          | 如何選最佳學習率？     |
+| 學習率策略         | 對收斂與泛化有何影響？ |
 
 ---
 

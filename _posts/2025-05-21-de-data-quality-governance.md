@@ -1,7 +1,7 @@
 ---
 title: "資料品質與治理全攻略：Data Contract、Schema Evolution、Lineage、驗證與監控"
 date: 2025-05-21 22:00:00 +0800
-categories: [數據工程]
+categories: [Data Engineering]
 tags: [資料品質, Data Contract, Schema Evolution, Data Lineage, Great Expectations, Deequ, OpenLineage, Marquez, 驗證, 監控]
 ---
 
@@ -102,13 +102,13 @@ df.expect_column_values_to_be_unique('order_id')
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Data Contract | 作用與設計要點？ |
-| Schema Evolution | 如何兼容？ |
-| Great Expectations/Deequ | 規則撰寫與自動化？ |
-| Data Lineage | 如何落地與應用？ |
-| 監控         | 如何設計資料品質告警？ |
+| 主題                     | 常見問題               |
+| ------------------------ | ---------------------- |
+| Data Contract            | 作用與設計要點？       |
+| Schema Evolution         | 如何兼容？             |
+| Great Expectations/Deequ | 規則撰寫與自動化？     |
+| Data Lineage             | 如何落地與應用？       |
+| 監控                     | 如何設計資料品質告警？ |
 
 ---
 

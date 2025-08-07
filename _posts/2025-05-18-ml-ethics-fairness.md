@@ -1,7 +1,7 @@
 ---
 title: "倫理、偏差與公平：機器學習的責任、合規與公平性全解析"
 date: 2025-05-18 23:00:00 +0800
-categories: [機器學習理論]
+categories: [Machine Learning]
 tags: [倫理, 公平性, 偏差, Fairness, GDPR, CCPA, Bias Mitigation]
 ---
 
@@ -112,13 +112,13 @@ X_balanced = np.vstack([X_minority, X_majority_down])
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Fairness Metrics | 有哪些？如何計算？ |
-| GDPR/CCPA    | 對 ML 有何影響？ |
-| 偏見來源     | 如何偵測與緩解？ |
-| 合規實踐     | 如何設計資料流與審計？ |
-| 公平性 vs 準確率 | 如何權衡？ |
+| 主題             | 常見問題               |
+| ---------------- | ---------------------- |
+| Fairness Metrics | 有哪些？如何計算？     |
+| GDPR/CCPA        | 對 ML 有何影響？       |
+| 偏見來源         | 如何偵測與緩解？       |
+| 合規實踐         | 如何設計資料流與審計？ |
+| 公平性 vs 準確率 | 如何權衡？             |
 
 ---
 

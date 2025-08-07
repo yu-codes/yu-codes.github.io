@@ -1,7 +1,7 @@
 ---
 title: "雲端部署與服務挑戰題庫：14 章經典面試題與解法提示"
 date: 2025-05-23 23:59:00 +0800
-categories: [雲端部署與服務]
+categories: [Cloud Deployment & Services]
 tags: [面試題, 雲端, DevOps, 安全, 觀測性, 白板題, 解題技巧]
 ---
 

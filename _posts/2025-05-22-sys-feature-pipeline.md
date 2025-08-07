@@ -1,7 +1,7 @@
 ---
 title: "Feature Pipeline 實戰：Batch/Streaming 特徵、CEP、特徵一致性解法"
 date: 2025-05-22 15:00:00 +0800
-categories: [大型系統設計與MLOps]
+categories: [System Design & MLOps]
 tags: [Feature Pipeline, Batch Feature, Streaming Feature, CEP, 特徵一致性, Training-Serving Skew]
 ---
 
@@ -81,13 +81,13 @@ env = StreamExecutionEnvironment.get_execution_environment()
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Batch vs Streaming 特徵 | 差異與選型？ |
-| CEP         | 原理與應用場景？ |
-| Training-Serving Skew | 如何解決？ |
-| 特徵一致性驗證 | 如何設計？ |
-| Pipeline 設計 | 如何兼顧時效與穩定？ |
+| 主題                    | 常見問題             |
+| ----------------------- | -------------------- |
+| Batch vs Streaming 特徵 | 差異與選型？         |
+| CEP                     | 原理與應用場景？     |
+| Training-Serving Skew   | 如何解決？           |
+| 特徵一致性驗證          | 如何設計？           |
+| Pipeline 設計           | 如何兼顧時效與穩定？ |
 
 ---
 

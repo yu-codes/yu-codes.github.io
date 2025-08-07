@@ -1,7 +1,7 @@
 ---
 title: "容器化與 Kubernetes：Pod 資源、GPU 調度、HPA/VPA/Autoscaler 全攻略"
 date: 2025-05-22 20:00:00 +0800
-categories: [大型系統設計與MLOps]
+categories: [System Design & MLOps]
 tags: [Kubernetes, 容器化, Pod, GPU 調度, HPA, VPA, Cluster Autoscaler, Node Selector, NVIDIA Plugin]
 ---
 
@@ -103,13 +103,13 @@ resources:
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Pod 資源限制 | 如何設計？ |
-| GPU 調度     | NVIDIA Plugin/Share-GPU 原理？ |
-| HPA/VPA      | 適用場景與設計細節？ |
-| Cluster Autoscaler | 如何自動擴縮？ |
-| Node Selector | 有何作用與限制？ |
+| 主題               | 常見問題                       |
+| ------------------ | ------------------------------ |
+| Pod 資源限制       | 如何設計？                     |
+| GPU 調度           | NVIDIA Plugin/Share-GPU 原理？ |
+| HPA/VPA            | 適用場景與設計細節？           |
+| Cluster Autoscaler | 如何自動擴縮？                 |
+| Node Selector      | 有何作用與限制？               |
 
 ---
 

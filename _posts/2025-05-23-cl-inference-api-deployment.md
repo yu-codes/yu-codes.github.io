@@ -1,7 +1,7 @@
 ---
 title: "推論 API 佈署策略：Blue-Green、Canary、KServe、Triton、EKS+Spot"
 date: 2025-05-23 19:00:00 +0800
-categories: [雲端部署與服務]
+categories: [Cloud Deployment & Services]
 tags: [推論 API, Blue-Green, Canary, Shadow, KServe, Triton, TensorRT-LLM, EKS, Spot, DaemonSet, PriorityClass, Checkpoint]
 ---
 
@@ -96,13 +96,13 @@ description: "Critical inference pods"
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Blue-Green/Canary | 部署策略與選型？ |
-| KServe/Triton | 功能與差異？ |
-| EKS+Spot      | 容錯與恢復設計？ |
-| PriorityClass | 如何設計與應用？ |
-| Checkpoint    | 推論狀態保存與恢復？ |
+| 主題              | 常見問題             |
+| ----------------- | -------------------- |
+| Blue-Green/Canary | 部署策略與選型？     |
+| KServe/Triton     | 功能與差異？         |
+| EKS+Spot          | 容錯與恢復設計？     |
+| PriorityClass     | 如何設計與應用？     |
+| Checkpoint        | 推論狀態保存與恢復？ |
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "預訓練策略與微調全攻略：Feature-based、Fine-tune、Prompt-tune 與 Llama 案例"
 date: 2025-05-19 17:00:00 +0800
-categories: [深度學習]
+categories: [Machine Learning]
 tags: [預訓練, 微調, Feature-based, Fine-tune, Prompt-tune, Llama, 收斂, 記憶體瓶頸]
 ---
 
@@ -118,13 +118,13 @@ trainer.train()
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| 預訓練 vs 從零訓練 | 差異與優缺點？ |
-| Feature-based/Fine-tune/Prompt-tune | 適用場景？ |
-| Llama 微調 | 需注意哪些資源瓶頸？ |
-| 微調策略選擇 | 如何根據任務選擇？ |
-| AMP/梯度累積 | 有何作用？ |
+| 主題                                | 常見問題             |
+| ----------------------------------- | -------------------- |
+| 預訓練 vs 從零訓練                  | 差異與優缺點？       |
+| Feature-based/Fine-tune/Prompt-tune | 適用場景？           |
+| Llama 微調                          | 需注意哪些資源瓶頸？ |
+| 微調策略選擇                        | 如何根據任務選擇？   |
+| AMP/梯度累積                        | 有何作用？           |
 
 ---
 

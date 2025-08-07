@@ -1,7 +1,7 @@
 ---
 title: "GPU 叢集調度全攻略：NVIDIA Plugin、MIG、Slurm、Ray、GPU Sharing"
 date: 2025-05-23 18:00:00 +0800
-categories: [雲端部署與服務]
+categories: [Cloud Deployment & Services]
 tags: [GPU, 叢集調度, NVIDIA Device Plugin, MIG, Node Affinity, Slurm, Ray, Kubeflow, GPU Sharing, Multi-Instance GPU]
 ---
 
@@ -94,13 +94,13 @@ nodeSelector:
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| NVIDIA Plugin/MIG | 原理與應用場景？ |
-| Slurm vs Ray | 差異與選型？ |
-| Kubeflow Training Operator | 功能與優勢？ |
-| GPU Sharing  | 如何實現與監控？ |
-| Node Affinity | 異構 GPU 管理？ |
+| 主題                       | 常見問題         |
+| -------------------------- | ---------------- |
+| NVIDIA Plugin/MIG          | 原理與應用場景？ |
+| Slurm vs Ray               | 差異與選型？     |
+| Kubeflow Training Operator | 功能與優勢？     |
+| GPU Sharing                | 如何實現與監控？ |
+| Node Affinity              | 異構 GPU 管理？  |
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Attention 機制拆解：Scaled Dot-Product、Multi-Head、QKV 幾何與 Masking"
 date: 2025-05-19 15:00:00 +0800
-categories: [深度學習]
+categories: [Machine Learning]
 tags: [Attention, Scaled Dot-Product, Multi-Head, Self-Attention, QKV, Masking]
 ---
 
@@ -101,13 +101,13 @@ print("Causal Masked Attention:", attn)
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Scaled Dot-Product | 為何要縮放？ |
-| Multi-Head   | 有何優勢？ |
-| Q/K/V        | 幾何意義？ |
-| Masking      | Padding vs Causal 差異？ |
-| Self-Attention | 如何捕捉長距依賴？ |
+| 主題               | 常見問題                 |
+| ------------------ | ------------------------ |
+| Scaled Dot-Product | 為何要縮放？             |
+| Multi-Head         | 有何優勢？               |
+| Q/K/V              | 幾何意義？               |
+| Masking            | Padding vs Causal 差異？ |
+| Self-Attention     | 如何捕捉長距依賴？       |
 
 ---
 

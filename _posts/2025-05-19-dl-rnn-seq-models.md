@@ -1,7 +1,7 @@
 ---
 title: "循環與序列模型全解析：RNN、LSTM、GRU、Seq2Seq 與時序預測"
 date: 2025-05-19 14:00:00 +0800
-categories: [深度學習]
+categories: [Machine Learning]
 tags: [RNN, LSTM, GRU, Seq2Seq, Attention, 時序預測, Teacher Forcing]
 ---
 
@@ -114,13 +114,13 @@ print("Bi-RNN 輸出 shape:", out_bi.shape)
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| RNN          | 為何會梯度爆炸/消失？如何解決？ |
-| LSTM/GRU     | 閘門結構與優缺點？ |
-| Seq2Seq      | Encoder-Decoder 如何運作？ |
-| Attention    | 如何幫助長序列建模？ |
-| Teacher Forcing | 有何優缺點？ |
+| 主題            | 常見問題                        |
+| --------------- | ------------------------------- |
+| RNN             | 為何會梯度爆炸/消失？如何解決？ |
+| LSTM/GRU        | 閘門結構與優缺點？              |
+| Seq2Seq         | Encoder-Decoder 如何運作？      |
+| Attention       | 如何幫助長序列建模？            |
+| Teacher Forcing | 有何優缺點？                    |
 
 ---
 

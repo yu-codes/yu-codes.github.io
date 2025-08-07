@@ -1,7 +1,7 @@
 ---
 title: "超參數最佳化全攻略：Grid/Random/Bayesian、Hyperband 與重現性"
 date: 2025-05-18 20:00:00 +0800
-categories: [機器學習理論]
+categories: [Machine Learning]
 tags: [超參數, Grid Search, Random Search, Bayesian Optimization, Hyperband, Reproducibility]
 ---
 
@@ -129,13 +129,13 @@ def set_seed(seed=42):
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Grid vs Random| 何時選用？優缺點？ |
-| Bayesian Opt | 原理與優勢？ |
-| Hyperband    | 如何加速搜尋？ |
-| 勢能坑       | 如何避免？ |
-| 重現性       | 如何確保？有哪些步驟？ |
+| 主題           | 常見問題               |
+| -------------- | ---------------------- |
+| Grid vs Random | 何時選用？優缺點？     |
+| Bayesian Opt   | 原理與優勢？           |
+| Hyperband      | 如何加速搜尋？         |
+| 勢能坑         | 如何避免？             |
+| 重現性         | 如何確保？有哪些步驟？ |
 
 ---
 

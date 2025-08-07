@@ -1,7 +1,7 @@
 ---
 title: "Azure AI 生態圈全解析：ML Workspace、OpenAI、ACI/AKS/Batch 部署"
 date: 2025-05-23 15:00:00 +0800
-categories: [雲端部署與服務]
+categories: [Cloud Deployment & Services]
 tags: [Azure, Azure ML, Workspace, Designer, Endpoint, OpenAI, GPT-4o, ACI, AKS, Batch]
 ---
 
@@ -62,11 +62,11 @@ Azure 提供完整的 AI 平台，從 ML Workspace、Designer、Endpoint，到 O
 - 分散式批次運算平台，適合大規模 ETL、批次推論
 - 支援自動資源調度、Spot VM、任務依賴
 
-| 服務   | 適用場景         | 優點           | 缺點           |
-|--------|------------------|----------------|----------------|
-| ACI    | 短時、彈性任務   | 快速、無伺服器 | 不支援 GPU     |
-| AKS    | 大規模部署       | 彈性、可擴展   | 管理複雜       |
-| Batch  | 批次運算         | 自動調度、低價 | 不適合即時服務 |
+| 服務  | 適用場景       | 優點           | 缺點           |
+| ----- | -------------- | -------------- | -------------- |
+| ACI   | 短時、彈性任務 | 快速、無伺服器 | 不支援 GPU     |
+| AKS   | 大規模部署     | 彈性、可擴展   | 管理複雜       |
+| Batch | 批次運算       | 自動調度、低價 | 不適合即時服務 |
 
 ---
 
@@ -96,13 +96,13 @@ Azure 提供完整的 AI 平台，從 ML Workspace、Designer、Endpoint，到 O
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| ML Workspace | 功能與適用場景？ |
-| Designer     | 視覺化 Pipeline 優缺點？ |
-| Endpoint     | 多模型部署與 Auto-Scaling？ |
-| OpenAI on Azure | GPT-4o 佈署與應用？ |
-| ACI/AKS/Batch | 選型與設計原則？ |
+| 主題            | 常見問題                    |
+| --------------- | --------------------------- |
+| ML Workspace    | 功能與適用場景？            |
+| Designer        | 視覺化 Pipeline 優缺點？    |
+| Endpoint        | 多模型部署與 Auto-Scaling？ |
+| OpenAI on Azure | GPT-4o 佈署與應用？         |
+| ACI/AKS/Batch   | 選型與設計原則？            |
 
 ---
 

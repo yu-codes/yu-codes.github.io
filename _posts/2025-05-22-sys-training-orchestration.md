@@ -1,7 +1,7 @@
 ---
 title: "訓練工作流 Orchestration：Airflow、Dagster、Kubeflow、資源預估與 Checkpoint"
 date: 2025-05-22 18:00:00 +0800
-categories: [大型系統設計與MLOps]
+categories: [System Design & MLOps]
 tags: [Orchestration, Airflow, Dagster, Kubeflow, Pipeline, Spot, On-Demand, Checkpoint, Resume]
 ---
 
@@ -107,13 +107,13 @@ def load_ckpt(model, optimizer, path):
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Airflow/Dagster/Kubeflow | 差異與選型？ |
-| 資源預估     | 如何自動化？ |
-| Spot/On-Demand | 適用場景與切換策略？ |
-| Checkpoint   | 如何設計 sharding 與 resume？ |
-| DAG 設計     | 依賴、重試、監控細節？ |
+| 主題                     | 常見問題                      |
+| ------------------------ | ----------------------------- |
+| Airflow/Dagster/Kubeflow | 差異與選型？                  |
+| 資源預估                 | 如何自動化？                  |
+| Spot/On-Demand           | 適用場景與切換策略？          |
+| Checkpoint               | 如何設計 sharding 與 resume？ |
+| DAG 設計                 | 依賴、重試、監控細節？        |
 
 ---
 

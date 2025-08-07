@@ -1,7 +1,7 @@
 ---
 title: "強化式學習速查：MDP、Q-Learning、DQN、Policy Gradient 與探索-利用平衡"
 date: 2025-05-18 22:00:00 +0800
-categories: [機器學習理論]
+categories: [Machine Learning]
 tags: [強化學習, MDP, Q-Learning, DQN, Policy Gradient, 探索-利用, ε-Greedy, UCB]
 ---
 
@@ -114,13 +114,13 @@ class PolicyNet(nn.Module):
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| MDP          | 定義與貝爾曼方程？ |
-| Q-Learning   | 更新規則與收斂性？ |
-| DQN          | 如何穩定訓練？ |
-| Policy Gradient | 優缺點與應用？ |
-| 探索-利用    | ε-Greedy 與 UCB 差異？ |
+| 主題            | 常見問題               |
+| --------------- | ---------------------- |
+| MDP             | 定義與貝爾曼方程？     |
+| Q-Learning      | 更新規則與收斂性？     |
+| DQN             | 如何穩定訓練？         |
+| Policy Gradient | 優缺點與應用？         |
+| 探索-利用       | ε-Greedy 與 UCB 差異？ |
 
 ---
 

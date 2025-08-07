@@ -1,7 +1,7 @@
 ---
 title: "數據工程大局觀：角色分工、架構流派與生命線圖全解析"
 date: 2025-05-21 12:00:00 +0800
-categories: [數據工程]
+categories: [Data Engineering]
 tags: [Data Engineering, ML Engineer, Analytics Engineer, Batch, Streaming, Data Pipeline, Producer, Consumer]
 ---
 
@@ -13,11 +13,11 @@ tags: [Data Engineering, ML Engineer, Analytics Engineer, Batch, Streaming, Data
 
 ## Data Engineer vs. ML Engineer vs. Analytics Engineer
 
-| 角色                | 核心職責                           | 常用工具/技術           |
-|---------------------|------------------------------------|-------------------------|
-| Data Engineer       | 數據管線建置、ETL、資料治理        | Spark, Airflow, Kafka   |
-| ML Engineer         | 模型訓練、部署、特徵工程           | TensorFlow, PyTorch, MLflow |
-| Analytics Engineer  | BI 報表、SQL 分析、資料建模        | dbt, BigQuery, Tableau  |
+| 角色               | 核心職責                    | 常用工具/技術               |
+| ------------------ | --------------------------- | --------------------------- |
+| Data Engineer      | 數據管線建置、ETL、資料治理 | Spark, Airflow, Kafka       |
+| ML Engineer        | 模型訓練、部署、特徵工程    | TensorFlow, PyTorch, MLflow |
+| Analytics Engineer | BI 報表、SQL 分析、資料建模 | dbt, BigQuery, Tableau      |
 
 - Data Engineer：專注於資料流、品質、可用性
 - ML Engineer：專注於模型與特徵
@@ -37,10 +37,10 @@ tags: [Data Engineering, ML Engineer, Analytics Engineer, Batch, Streaming, Data
 - 即時處理資料流，適合監控、即時指標、警報
 - 工具：Kafka, Flink, Kinesis, Beam
 
-| 架構類型 | 延遲 | 適用場景 | 代表技術 |
-|----------|------|----------|----------|
-| Batch    | 高   | 報表、歷史分析 | Spark, Airflow |
-| Streaming| 低   | 監控、即時分析 | Kafka, Flink   |
+| 架構類型  | 延遲 | 適用場景       | 代表技術       |
+| --------- | ---- | -------------- | -------------- |
+| Batch     | 高   | 報表、歷史分析 | Spark, Airflow |
+| Streaming | 低   | 監控、即時分析 | Kafka, Flink   |
 
 ---
 
@@ -80,11 +80,11 @@ graph LR
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Data vs ML vs Analytics Engineer | 角色差異與合作？ |
-| Batch vs Streaming | 架構選型與 trade-off？ |
-| 生命線設計   | 如何保證資料質量與低延遲？ |
+| 主題                             | 常見問題                   |
+| -------------------------------- | -------------------------- |
+| Data vs ML vs Analytics Engineer | 角色差異與合作？           |
+| Batch vs Streaming               | 架構選型與 trade-off？     |
+| 生命線設計                       | 如何保證資料質量與低延遲？ |
 
 ---
 

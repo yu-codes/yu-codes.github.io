@@ -1,7 +1,7 @@
 ---
 title: "ML 經典面試題庫：13 章重點題型與解法直覺"
 date: 2025-05-18 23:30:00 +0800
-categories: [機器學習理論]
+categories: [Machine Learning]
 tags: [面試題, 機器學習, 解題技巧, 直覺, 經典題庫]
 ---
 

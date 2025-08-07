@@ -1,7 +1,7 @@
 ---
 title: "多模態與視覺語言模型：CLIP、BLIP-2、LLaVA、Cross-Attention 與權重共享"
 date: 2025-05-19 22:00:00 +0800
-categories: [深度學習]
+categories: [Machine Learning]
 tags: [多模態, 視覺語言, CLIP, BLIP-2, LLaVA, Cross-Attention, 權重共享]
 ---
 
@@ -89,13 +89,13 @@ class CrossAttention(nn.Module):
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| CLIP         | 對比學習原理？如何對齊影像與文本？ |
-| BLIP-2       | Q-Former 作用？ |
-| LLaVA        | 如何實現圖文對話？ |
-| Cross-Attention | 權重共享有何優缺點？ |
-| 多模態應用   | 實務挑戰與解法？ |
+| 主題            | 常見問題                           |
+| --------------- | ---------------------------------- |
+| CLIP            | 對比學習原理？如何對齊影像與文本？ |
+| BLIP-2          | Q-Former 作用？                    |
+| LLaVA           | 如何實現圖文對話？                 |
+| Cross-Attention | 權重共享有何優缺點？               |
+| 多模態應用      | 實務挑戰與解法？                   |
 
 ---
 

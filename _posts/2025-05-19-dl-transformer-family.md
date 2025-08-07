@@ -1,7 +1,7 @@
 ---
 title: "Transformer 家族全解析：結構、位置編碼、複雜度與主流模型比較"
 date: 2025-05-19 16:00:00 +0800
-categories: [深度學習]
+categories: [Machine Learning]
 tags: [Transformer, Encoder, Decoder, Positional Encoding, BERT, GPT, DeiT, Swin, 計算複雜度]
 ---
 
@@ -72,12 +72,12 @@ class TransformerEncoderBlock(nn.Module):
 
 ## BERT、GPT、DeiT、Swin 頂層差異
 
-| 模型   | 架構特點 | 任務 | 代表應用 |
-|--------|----------|------|----------|
-| BERT   | 雙向 Encoder | 預訓練+微調 | NLP 理解、問答 |
-| GPT    | 單向 Decoder | 自回歸生成 | NLP 生成、對話 |
-| DeiT   | ViT 改進，圖像分類 | Encoder | Vision |
-| Swin   | 局部窗口+移動，層次結構 | Encoder | 影像分割、檢測 |
+| 模型 | 架構特點                | 任務        | 代表應用       |
+| ---- | ----------------------- | ----------- | -------------- |
+| BERT | 雙向 Encoder            | 預訓練+微調 | NLP 理解、問答 |
+| GPT  | 單向 Decoder            | 自回歸生成  | NLP 生成、對話 |
+| DeiT | ViT 改進，圖像分類      | Encoder     | Vision         |
+| Swin | 局部窗口+移動，層次結構 | Encoder     | 影像分割、檢測 |
 
 ---
 
@@ -116,13 +116,13 @@ print("Sinusoid Encoding:", sinusoid_encoding(5, 8))
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Encoder/Decoder | 結構差異與應用？ |
-| Positional Encoding | 為何需要？有何種類？ |
-| Self-Attention 複雜度 | 如何優化？ |
-| BERT vs GPT  | 架構與任務差異？ |
-| Swin/DeiT    | Vision Transformer 有何創新？ |
+| 主題                  | 常見問題                      |
+| --------------------- | ----------------------------- |
+| Encoder/Decoder       | 結構差異與應用？              |
+| Positional Encoding   | 為何需要？有何種類？          |
+| Self-Attention 複雜度 | 如何優化？                    |
+| BERT vs GPT           | 架構與任務差異？              |
+| Swin/DeiT             | Vision Transformer 有何創新？ |
 
 ---
 

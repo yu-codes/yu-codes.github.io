@@ -1,7 +1,7 @@
 ---
 title: "特徵工程與選擇全攻略：編碼、標準化、特徵選擇三大法門"
 date: 2025-05-18 17:00:00 +0800
-categories: [機器學習理論]
+categories: [Machine Learning]
 tags: [特徵工程, One-Hot, 標準化, 特徵選擇, Encoding, Feature Selection]
 ---
 
@@ -152,13 +152,13 @@ print("Lasso 係數:", lasso.coef_)
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| One-Hot      | 何時不用？有何缺點？ |
-| Target Encoding | 如何防止資料洩漏？ |
-| 標準化/正規化 | 差異與適用場景？ |
-| Filter/Wrapper/Embedded | 各自優缺點？ |
-| Lasso        | 為何能做特徵選擇？ |
+| 主題                    | 常見問題             |
+| ----------------------- | -------------------- |
+| One-Hot                 | 何時不用？有何缺點？ |
+| Target Encoding         | 如何防止資料洩漏？   |
+| 標準化/正規化           | 差異與適用場景？     |
+| Filter/Wrapper/Embedded | 各自優缺點？         |
+| Lasso                   | 為何能做特徵選擇？   |
 
 ---
 

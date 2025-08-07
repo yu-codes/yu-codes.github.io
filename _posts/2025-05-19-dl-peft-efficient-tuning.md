@@ -1,7 +1,7 @@
 ---
 title: "參數高效微調（PEFT）全攻略：LoRA、Adapter、Prefix、實務選型與調參"
 date: 2025-05-19 18:00:00 +0800
-categories: [深度學習]
+categories: [Machine Learning]
 tags: [PEFT, LoRA, QLoRA, Adapter, Prefix Tuning, P-Tuning, 低秩更新, 量化, 記憶體優化]
 ---
 
@@ -55,11 +55,11 @@ print("LoRA 參數量:", sum(p.numel() for n, p in model.named_parameters() if "
 
 ## 差異比較：記憶體佔用、推論友善度
 
-| 方法         | 記憶體佔用 | 推論友善度 | 適用場景         |
-|--------------|------------|------------|------------------|
-| LoRA/QLoRA   | 極低       | 高         | 通用、消費級 GPU |
-| Adapter      | 低         | 高         | 多任務           |
-| Prefix/P-Tuning | 低      | 高         | 生成、NLP        |
+| 方法            | 記憶體佔用 | 推論友善度 | 適用場景         |
+| --------------- | ---------- | ---------- | ---------------- |
+| LoRA/QLoRA      | 極低       | 高         | 通用、消費級 GPU |
+| Adapter         | 低         | 高         | 多任務           |
+| Prefix/P-Tuning | 低         | 高         | 生成、NLP        |
 
 ---
 
@@ -103,13 +103,13 @@ model = get_peft_model(model, config)
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| LoRA/QLoRA   | 原理、優缺點、適用場景？ |
-| Adapter      | 結構與多任務優勢？ |
-| Prefix/P-Tuning | 如何運作？適用哪些任務？ |
-| Rank/α       | 如何選擇？有何 trade-off？ |
-| QLoRA        | 量化有何風險？ |
+| 主題            | 常見問題                   |
+| --------------- | -------------------------- |
+| LoRA/QLoRA      | 原理、優缺點、適用場景？   |
+| Adapter         | 結構與多任務優勢？         |
+| Prefix/P-Tuning | 如何運作？適用哪些任務？   |
+| Rank/α          | 如何選擇？有何 trade-off？ |
+| QLoRA           | 量化有何風險？             |
 
 ---
 

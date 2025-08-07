@@ -1,7 +1,7 @@
 ---
 title: "監控・告警・追蹤全攻略：Prometheus、Grafana、ELK、Loki、Drift 偵測"
 date: 2025-05-22 22:00:00 +0800
-categories: [大型系統設計與MLOps]
+categories: [System Design & MLOps]
 tags: [監控, 告警, 追蹤, Prometheus, Grafana, ELK, Loki, Jaeger, Model Drift, Data Drift]
 ---
 
@@ -90,13 +90,13 @@ def psi(expected, actual, buckets=10):
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
+| 主題               | 常見問題         |
+| ------------------ | ---------------- |
 | Prometheus/Grafana | 指標設計與告警？ |
-| ELK/Loki     | 日誌收集與查詢？ |
-| Jaeger       | 分散式追蹤原理？ |
-| Drift 偵測   | 如何線上自動化？ |
-| Trace id     | 如何設計與串接？ |
+| ELK/Loki           | 日誌收集與查詢？ |
+| Jaeger             | 分散式追蹤原理？ |
+| Drift 偵測         | 如何線上自動化？ |
+| Trace id           | 如何設計與串接？ |
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "版本控管與測試全攻略：LakeFS、DVC、DAG 單元測試與 CI/CD on Data"
 date: 2025-05-21 23:00:00 +0800
-categories: [數據工程]
+categories: [Data Engineering]
 tags: [Data Versioning, LakeFS, DVC, DAG Test, Integration Test, CI/CD, dbt Cloud, Airflow CI]
 ---
 
@@ -100,13 +100,13 @@ def test_extract_task():
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| LakeFS/DVC   | 原理、適用場景、優缺點？ |
-| DAG 測試     | 單元/整合測試如何設計？ |
-| CI/CD on Data| 如何自動化資料驗證？ |
-| 版本控管     | 如何追蹤資料與模型？ |
-| 測試覆蓋率   | 如何提升與監控？ |
+| 主題          | 常見問題                 |
+| ------------- | ------------------------ |
+| LakeFS/DVC    | 原理、適用場景、優缺點？ |
+| DAG 測試      | 單元/整合測試如何設計？  |
+| CI/CD on Data | 如何自動化資料驗證？     |
+| 版本控管      | 如何追蹤資料與模型？     |
+| 測試覆蓋率    | 如何提升與監控？         |
 
 ---
 

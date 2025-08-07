@@ -1,7 +1,7 @@
 ---
 title: "機率圖模型全解析：Bayesian Network、MRF、EM 與隱變量模型"
 date: 2025-05-17 20:00:00 +0800
-categories: [AI 數學基礎]
+categories: [AI Math Foundation]
 tags: [機率圖模型, Bayesian Network, Markov Random Field, EM, HMM, GMM]
 ---
 
@@ -166,8 +166,8 @@ print("分群結果:", labels[:10])
 
 ## 常見面試熱點整理
 
-| 熱點主題         | 面試常問問題 |
-|------------------|-------------|
+| 熱點主題         | 面試常問問題       |
+| ---------------- | ------------------ |
 | Bayesian Network | 如何分解聯合分布？ |
 | MRF              | 何時用無向圖？     |
 | EM 演算法        | 推導與收斂性？     |

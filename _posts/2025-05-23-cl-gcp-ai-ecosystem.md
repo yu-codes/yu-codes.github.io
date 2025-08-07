@@ -1,7 +1,7 @@
 ---
 title: "GCP AI 生態圈全解析：Vertex AI、TPU/GPU、BigQuery ML、生成式 AI Studio"
 date: 2025-05-23 14:00:00 +0800
-categories: [雲端部署與服務]
+categories: [Cloud Deployment & Services]
 tags: [GCP, Vertex AI, TPU, GPU, Spot, BigQuery ML, Generative AI Studio, Workbench, Training, Prediction]
 ---
 
@@ -47,11 +47,11 @@ GCP 提供一站式 AI 平台，從 Vertex AI Workbench、Training、Prediction�
 - 低價但可隨時中斷，適合容錯訓練、非即時任務
 - 建議設計 checkpoint 與自動恢復
 
-| 資源   | 適用場景         | 優點           | 缺點           |
-|--------|------------------|----------------|----------------|
-| TPU    | 大規模訓練       | 高效能、低成本 | 需程式相容     |
-| GPU    | 通用訓練/推論    | 生態豐富       | 成本較高       |
-| Spot   | 容錯訓練         | 低價           | 可能中斷       |
+| 資源 | 適用場景      | 優點           | 缺點       |
+| ---- | ------------- | -------------- | ---------- |
+| TPU  | 大規模訓練    | 高效能、低成本 | 需程式相容 |
+| GPU  | 通用訓練/推論 | 生態豐富       | 成本較高   |
+| Spot | 容錯訓練      | 低價           | 可能中斷   |
 
 ---
 
@@ -97,13 +97,13 @@ GCP 提供一站式 AI 平台，從 Vertex AI Workbench、Training、Prediction�
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Vertex AI    | Workbench/Training/Prediction 差異？ |
-| TPU vs GPU   | 選型與效能比較？ |
-| Spot/Preemptible | 適用場景與設計？ |
-| BigQuery ML  | 適用場景與限制？ |
-| Generative AI Studio | 功能與應用？ |
+| 主題                 | 常見問題                             |
+| -------------------- | ------------------------------------ |
+| Vertex AI            | Workbench/Training/Prediction 差異？ |
+| TPU vs GPU           | 選型與效能比較？                     |
+| Spot/Preemptible     | 適用場景與設計？                     |
+| BigQuery ML          | 適用場景與限制？                     |
+| Generative AI Studio | 功能與應用？                         |
 
 ---
 

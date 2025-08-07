@@ -1,7 +1,7 @@
 ---
 title: "卷積網路精要：CNN 結構、演進與應用全解析"
 date: 2025-05-19 13:00:00 +0800
-categories: [深度學習]
+categories: [Machine Learning]
 tags: [CNN, 卷積, 池化, ResNet, EfficientNet, Inception, TCN, WaveNet]
 ---
 
@@ -68,11 +68,11 @@ print("卷積後 shape:", y.shape, "轉置卷積後 shape:", z.shape)
 
 ## Residual / Dense / Inception Block 比較
 
-| Block 類型   | 結構特點 | 優點 | 代表網路 |
-|--------------|----------|------|----------|
-| Residual     | 跳接殘差 | 解梯度消失 | ResNet   |
-| Dense        | 全層連接 | 特徵重用 | DenseNet |
-| Inception    | 多尺度卷積 | 捕捉多種特徵 | GoogLeNet/Inception |
+| Block 類型 | 結構特點   | 優點         | 代表網路            |
+| ---------- | ---------- | ------------ | ------------------- |
+| Residual   | 跳接殘差   | 解梯度消失   | ResNet              |
+| Dense      | 全層連接   | 特徵重用     | DenseNet            |
+| Inception  | 多尺度卷積 | 捕捉多種特徵 | GoogLeNet/Inception |
 
 ---
 
@@ -127,13 +127,13 @@ print(model)
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| 卷積         | 參數共享有何好處？ |
+| 主題         | 常見問題                  |
+| ------------ | ------------------------- |
+| 卷積         | 參數共享有何好處？        |
 | 池化         | Max vs Avg Pooling 差異？ |
-| ResNet       | 殘差連接如何幫助訓練？ |
-| EfficientNet | 複合縮放原理？ |
-| CNN 變體     | TCN/WaveNet 適用場景？ |
+| ResNet       | 殘差連接如何幫助訓練？    |
+| EfficientNet | 複合縮放原理？            |
+| CNN 變體     | TCN/WaveNet 適用場景？    |
 
 ---
 

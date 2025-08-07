@@ -1,7 +1,7 @@
 ---
 title: "特徵工程工坊：時序擴充、類別編碼、Feature Store 與自動化實戰"
 date: 2025-05-21 20:00:00 +0800
-categories: [數據工程]
+categories: [Data Engineering]
 tags: [特徵工程, 時序擴充, Lag, Rolling, Category Encoding, Feature Store, Feast, Tecton, SageMaker FS]
 ---
 
@@ -113,13 +113,13 @@ df_hash = encoder.fit_transform(df['cat'])
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Lag/Rolling  | 如何設計？有何風險？ |
-| Target/Hash/Leave-one-out | 差異與適用場景？ |
-| Feature Store| 作用與設計要點？ |
-| 特徵自動化   | 如何確保質量與追溯？ |
-| 線上/離線一致性 | 如何驗證？ |
+| 主題                      | 常見問題             |
+| ------------------------- | -------------------- |
+| Lag/Rolling               | 如何設計？有何風險？ |
+| Target/Hash/Leave-one-out | 差異與適用場景？     |
+| Feature Store             | 作用與設計要點？     |
+| 特徵自動化                | 如何確保質量與追溯？ |
+| 線上/離線一致性           | 如何驗證？           |
 
 ---
 

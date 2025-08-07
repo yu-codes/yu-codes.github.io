@@ -1,7 +1,7 @@
 ---
 title: "模型評估與驗證全攻略：交叉驗證、分類/迴歸指標、資料洩漏與早停"
 date: 2025-05-18 18:00:00 +0800
-categories: [機器學習理論]
+categories: [Machine Learning]
 tags: [模型評估, 交叉驗證, Precision, Recall, ROC-AUC, F1, MSE, MAE, Data Leakage, Early Stopping]
 ---
 
@@ -76,11 +76,11 @@ print("ROC-AUC:", roc_auc_score(y_true, y_prob))
 
 ## 迴歸指標：MSE / MAE / R²
 
-| 指標   | 公式 | 適用場景 | 直覺說明 |
-|--------|------|----------|----------|
-| MSE    | $\frac{1}{n}\sum(y_i-\hat{y}_i)^2$ | 回歸 | 懲罰大誤差 |
-| MAE    | $\frac{1}{n}\sum|y_i-\hat{y}_i|$ | 回歸 | 對離群值不敏感 |
-| R²     | $1-\frac{\sum(y_i-\hat{y}_i)^2}{\sum(y_i-\bar{y})^2}$ | 回歸 | 解釋變異比例 |
+| 指標 | 公式                                                  | 適用場景      | 直覺說明     |
+| ---- | ----------------------------------------------------- | ------------- | ------------ |
+| MSE  | $\frac{1}{n}\sum(y_i-\hat{y}_i)^2$                    | 回歸          | 懲罰大誤差   |
+| MAE  | $\frac{1}{n}\sum                                      | y_i-\hat{y}_i | $            | 回歸 | 對離群值不敏感 |
+| R²   | $1-\frac{\sum(y_i-\hat{y}_i)^2}{\sum(y_i-\bar{y})^2}$ | 回歸          | 解釋變異比例 |
 
 ```python
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
@@ -136,13 +136,13 @@ print("最佳迭代數:", gb.n_estimators_)
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| 交叉驗證     | 為何能提升泛化？K-Fold 與 Stratified 差異？ |
-| Precision/Recall | 何時優先考慮？有何 trade-off？ |
-| ROC-AUC      | 如何解讀？何時不適用？ |
-| Data Leakage | 常見來源？如何避免？ |
-| Early Stopping | 如何設計？有何風險？ |
+| 主題             | 常見問題                                    |
+| ---------------- | ------------------------------------------- |
+| 交叉驗證         | 為何能提升泛化？K-Fold 與 Stratified 差異？ |
+| Precision/Recall | 何時優先考慮？有何 trade-off？              |
+| ROC-AUC          | 如何解讀？何時不適用？                      |
+| Data Leakage     | 常見來源？如何避免？                        |
+| Early Stopping   | 如何設計？有何風險？                        |
 
 ---
 

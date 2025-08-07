@@ -2,7 +2,7 @@
 title: "SQL 深入指南：語法、實務技巧與面試常見問題"
 date: 2025-05-10 17:00:00 +0800
 categories: [Language]
-tags: [SQL, Database, Interview Prep, PostgreSQL, MySQL]
+tags: [SQL,Interview]
 ---
 
 # SQL 深入指南：語法、實務技巧與面試常見問題
@@ -84,12 +84,12 @@ FROM users a
 LEFT JOIN orders b ON a.id = b.user_id;
 ```
 
-| JOIN 類型      | 說明                   |
-| ------------ | -------------------- |
-| `INNER JOIN` | 僅保留符合條件的資料           |
+| JOIN 類型    | 說明                                |
+| ------------ | ----------------------------------- |
+| `INNER JOIN` | 僅保留符合條件的資料                |
 | `LEFT JOIN`  | 保留左表所有資料，右表沒有則為 NULL |
-| `RIGHT JOIN` | 保留右表所有資料             |
-| `FULL JOIN`  | 結合兩表所有資料             |
+| `RIGHT JOIN` | 保留右表所有資料                    |
+| `FULL JOIN`  | 結合兩表所有資料                    |
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "資料湖・倉庫・湖倉全解析：Hive Metastore, Delta Lake, Iceberg, ACID 與 Time-Travel"
 date: 2025-05-21 16:00:00 +0800
-categories: [數據工程]
+categories: [Data Engineering]
 tags: [資料湖, Data Lake, Data Warehouse, Lakehouse, Hive Metastore, Delta Lake, Iceberg, Hudi, ACID, Time-Travel, Redshift, BigQuery, Snowflake]
 ---
 
@@ -13,12 +13,12 @@ tags: [資料湖, Data Lake, Data Warehouse, Lakehouse, Hive Metastore, Delta La
 
 ## Hive Metastore, Delta Lake, Iceberg, Hudi 比對
 
-| 技術         | 架構類型   | ACID 支援 | Schema 演進 | Time-Travel | 主要特點                | 適用場景         |
-|--------------|------------|-----------|-------------|-------------|-------------------------|------------------|
-| Hive         | 傳統資料湖 | 弱        | 部分        | 無          | 依賴 Metastore, 無 ACID | ETL, 歷史查詢    |
-| Delta Lake   | 湖倉       | 強        | 支援        | 支援        | ACID, Schema Evolution, 高效 Upsert | ML, Streaming, BI |
-| Iceberg      | 湖倉       | 強        | 支援        | 支援        | 高效分區, 多引擎支援    | 多引擎, 大數據   |
-| Hudi         | 湖倉       | 強        | 支援        | 支援        | 即時寫入, Incremental Pull | CDC, 近即時分析  |
+| 技術       | 架構類型   | ACID 支援 | Schema 演進 | Time-Travel | 主要特點                            | 適用場景          |
+| ---------- | ---------- | --------- | ----------- | ----------- | ----------------------------------- | ----------------- |
+| Hive       | 傳統資料湖 | 弱        | 部分        | 無          | 依賴 Metastore, 無 ACID             | ETL, 歷史查詢     |
+| Delta Lake | 湖倉       | 強        | 支援        | 支援        | ACID, Schema Evolution, 高效 Upsert | ML, Streaming, BI |
+| Iceberg    | 湖倉       | 強        | 支援        | 支援        | 高效分區, 多引擎支援                | 多引擎, 大數據    |
+| Hudi       | 湖倉       | 強        | 支援        | 支援        | 即時寫入, Incremental Pull          | CDC, 近即時分析   |
 
 - Hive Metastore：管理表結構與分區，支援 Spark/Hive/Presto
 - Delta Lake：ACID、Upsert、Schema Evolution，Databricks 主推
@@ -94,13 +94,13 @@ SELECT * FROM table FOR TIMESTAMP AS OF '2024-01-01 00:00:00';
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Delta Lake vs Iceberg vs Hudi | 差異與選型？ |
-| ACID 保證   | 如何實現？ |
-| Time-Travel | 實作與應用場景？ |
-| Redshift/BigQuery/Snowflake | 儲存分層與查詢優化？ |
-| Hive Metastore | 角色與限制？ |
+| 主題                          | 常見問題             |
+| ----------------------------- | -------------------- |
+| Delta Lake vs Iceberg vs Hudi | 差異與選型？         |
+| ACID 保證                     | 如何實現？           |
+| Time-Travel                   | 實作與應用場景？     |
+| Redshift/BigQuery/Snowflake   | 儲存分層與查詢優化？ |
+| Hive Metastore                | 角色與限制？         |
 
 ---
 

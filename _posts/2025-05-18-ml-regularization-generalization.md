@@ -1,7 +1,7 @@
 ---
 title: "正則化與泛化理論全攻略：VC Dimension、Dropout、資料增強與理論直覺"
 date: 2025-05-18 19:00:00 +0800
-categories: [機器學習理論]
+categories: [Machine Learning]
 tags: [正則化, 泛化, VC Dimension, Dropout, Data Augmentation, Ensemble, Regularization]
 ---
 
@@ -106,13 +106,13 @@ transform = transforms.Compose([
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| VC Dimension | 如何計算？有何意義？ |
-| Dropout      | 原理與訓練/推論差異？ |
-| Data Augmentation | 有哪些方法？何時用？ |
-| Label Smoothing | 為何能提升泛化？ |
-| Ensemble     | 為何能提升泛化？與正則化關係？ |
+| 主題              | 常見問題                       |
+| ----------------- | ------------------------------ |
+| VC Dimension      | 如何計算？有何意義？           |
+| Dropout           | 原理與訓練/推論差異？          |
+| Data Augmentation | 有哪些方法？何時用？           |
+| Label Smoothing   | 為何能提升泛化？               |
+| Ensemble          | 為何能提升泛化？與正則化關係？ |
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "資料增強與合成全攻略：影像、NLP、音訊與自動策略搜尋"
 date: 2025-05-20 18:00:00 +0800
-categories: [模型訓練與優化]
+categories: [Machine Learning]
 tags: [資料增強, Data Augmentation, MixUp, CutMix, SpecAug, RandAugment, CTAugment, NLP, Audio]
 ---
 
@@ -104,13 +104,13 @@ specaug = T.FrequencyMasking(freq_mask_param=15)
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| MixUp/CutMix | 原理與優缺點？ |
-| SpecAug      | 如何提升語音模型魯棒性？ |
-| RandAugment  | 如何自動搜尋策略？ |
+| 主題         | 常見問題                  |
+| ------------ | ------------------------- |
+| MixUp/CutMix | 原理與優缺點？            |
+| SpecAug      | 如何提升語音模型魯棒性？  |
+| RandAugment  | 如何自動搜尋策略？        |
 | NLP 增強     | Token/Sentence Mix 方法？ |
-| Cutout       | 適用場景與限制？ |
+| Cutout       | 適用場景與限制？          |
 
 ---
 

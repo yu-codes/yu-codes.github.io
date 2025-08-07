@@ -1,7 +1,7 @@
 ---
 title: "非監督學習大補帖：聚類、密度估計、降維全解析"
 date: 2025-05-18 16:00:00 +0800
-categories: [機器學習理論]
+categories: [Machine Learning]
 tags: [非監督學習, 聚類, K-means, DBSCAN, GMM, PCA, t-SNE, UMAP]
 ---
 
@@ -152,13 +152,13 @@ plt.title("UMAP Projection"); plt.show()
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| K-means      | 如何選 K？初始值敏感怎麼辦？ |
-| DBSCAN       | 參數如何選？優缺點？ |
-| GMM/EM       | EM 步驟推導？何時用 GMM？ |
-| PCA/t-SNE/UMAP| 差異與適用場景？ |
-| 密度估計     | KDE 與 GMM 差異？ |
+| 主題           | 常見問題                     |
+| -------------- | ---------------------------- |
+| K-means        | 如何選 K？初始值敏感怎麼辦？ |
+| DBSCAN         | 參數如何選？優缺點？         |
+| GMM/EM         | EM 步驟推導？何時用 GMM？    |
+| PCA/t-SNE/UMAP | 差異與適用場景？             |
+| 密度估計       | KDE 與 GMM 差異？            |
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "模型訓練與優化挑戰題庫：13 章經典面試題與解法提示"
 date: 2025-05-20 23:00:00 +0800
-categories: [模型訓練與優化]
+categories: [Machine Learning]
 tags: [面試題, 訓練優化, 解題技巧, 白板題, 口試]
 ---
 

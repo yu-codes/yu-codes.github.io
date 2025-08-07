@@ -2,7 +2,7 @@
 title: "FastAPI 完全指南：從開發實戰到面試問答，一文掌握"
 date: 2025-05-12 20:10:00 +0800
 categories: [Backend]
-tags: [FastAPI, API 開發, Python, RESTful]
+tags: [FastAPI, Interview]
 ---
 
 # FastAPI 完全指南：從開發實戰到面試問答，一文掌握

@@ -1,7 +1,7 @@
 ---
 title: "ETL vs. ELT Pipeline 全解析：轉換時機、數據建模、Orchestrator 與實戰設計"
 date: 2025-05-21 14:00:00 +0800
-categories: [數據工程]
+categories: [Data Engineering]
 tags: [ETL, ELT, Data Pipeline, Star Schema, Snowflake Schema, SCD, Airflow, Dagster, Prefect, Orchestrator]
 ---
 
@@ -24,9 +24,9 @@ tags: [ETL, ELT, Data Pipeline, Star Schema, Snowflake Schema, SCD, Airflow, Dag
 - 適合現代雲端倉庫（BigQuery、Snowflake），利用倉庫運算力做轉換
 - 支援即時查詢、彈性探索、Schema on Read
 
-| 管線類型 | 轉換時機 | 適用場景 | 優點 | 缺點 |
-|----------|----------|----------|------|------|
-| ETL      | 載入前   | 傳統倉庫、嚴格治理 | 資料一致性高 | 彈性低、維運重 |
+| 管線類型 | 轉換時機 | 適用場景           | 優點           | 缺點             |
+| -------- | -------- | ------------------ | -------------- | ---------------- |
+| ETL      | 載入前   | 傳統倉庫、嚴格治理 | 資料一致性高   | 彈性低、維運重   |
 | ELT      | 載入後   | 雲端倉庫、資料湖   | 彈性高、易探索 | 治理難、轉換延遲 |
 
 ---
@@ -129,13 +129,13 @@ with DAG('etl_example', start_date=datetime(2023,1,1), schedule_interval='@daily
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| ETL vs ELT   | 何時選用？優缺點？ |
-| Star vs Snowflake | 結構差異與查詢效率？ |
-| SCD-I/II     | 如何設計與應用？ |
-| Airflow/Dagster/Prefect | 選型與實戰經驗？ |
-| DAG 設計     | 如何處理依賴與重試？ |
+| 主題                    | 常見問題             |
+| ----------------------- | -------------------- |
+| ETL vs ELT              | 何時選用？優缺點？   |
+| Star vs Snowflake       | 結構差異與查詢效率？ |
+| SCD-I/II                | 如何設計與應用？     |
+| Airflow/Dagster/Prefect | 選型與實戰經驗？     |
+| DAG 設計                | 如何處理依賴與重試？ |
 
 ---
 

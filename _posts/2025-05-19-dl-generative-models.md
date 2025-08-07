@@ -1,7 +1,7 @@
 ---
 title: "生成模型百花齊放：自回歸、VAE、GAN、Diffusion 與應用全解析"
 date: 2025-05-19 19:00:00 +0800
-categories: [深度學習]
+categories: [Machine Learning]
 tags: [生成模型, 自回歸, VAE, GAN, Diffusion, Flow-based, ControlNet]
 ---
 
@@ -104,13 +104,13 @@ class VAE(nn.Module):
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| GAN          | 損失函數推導？mode collapse？ |
-| VAE          | ELBO 結構與 KL 散度作用？ |
-| Diffusion    | 正向/反向過程數學原理？ |
-| Flow-based   | 可逆變換如何設計？ |
-| ControlNet   | 如何提升生成可控性？ |
+| 主題       | 常見問題                      |
+| ---------- | ----------------------------- |
+| GAN        | 損失函數推導？mode collapse？ |
+| VAE        | ELBO 結構與 KL 散度作用？     |
+| Diffusion  | 正向/反向過程數學原理？       |
+| Flow-based | 可逆變換如何設計？            |
+| ControlNet | 如何提升生成可控性？          |
 
 ---
 

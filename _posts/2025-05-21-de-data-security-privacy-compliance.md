@@ -1,7 +1,7 @@
 ---
 title: "安全・隱私・合規全攻略：PII、Tokenization、K-Anonymity、GDPR/CCPA、Row-Level Security"
 date: 2025-05-21 23:30:00 +0800
-categories: [數據工程]
+categories: [Data Engineering]
 tags: [安全, 隱私, 合規, PII, Tokenization, K-Anonymity, GDPR, CCPA, Row-Level Security, IAM]
 ---
 
@@ -96,13 +96,13 @@ CREATE ROW ACCESS POLICY region_rls AS (region STRING) RETURNS BOOLEAN ->
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| PII 分類     | 如何分級管理？ |
-| Tokenization | 原理與應用場景？ |
-| K-Anonymity  | 如何實作與評估？ |
+| 主題         | 常見問題             |
+| ------------ | -------------------- |
+| PII 分類     | 如何分級管理？       |
+| Tokenization | 原理與應用場景？     |
+| K-Anonymity  | 如何實作與評估？     |
 | GDPR/CCPA    | 對數據管線有何要求？ |
-| RLS/IAM      | 如何設計與落地？ |
+| RLS/IAM      | 如何設計與落地？     |
 
 ---
 

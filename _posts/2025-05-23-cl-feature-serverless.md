@@ -1,7 +1,7 @@
 ---
 title: "Serverless 計算全攻略：Lambda、Fargate、Cloud Functions、冷啟動與事件橋"
 date: 2025-05-23 16:00:00 +0800
-categories: [雲端部署與服務]
+categories: [Cloud Deployment & Services]
 tags: [Serverless, Lambda, Fargate, Cloud Functions, Cloud Run, Azure Functions, Provisioned Concurrency, 冷啟動, EventBridge, PubSub, Event Grid]
 ---
 
@@ -90,13 +90,13 @@ Serverless 計算讓開發者專注於業務邏輯，無需管理基礎設施。
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Lambda vs Fargate | 適用場景與差異？ |
-| 冷啟動       | 如何優化？ |
-| EventBridge/PubSub/Event Grid | 事件流設計？ |
-| Cloud Run/Functions | 選型與限制？ |
-| Provisioned Concurrency | 設計與調參？ |
+| 主題                          | 常見問題         |
+| ----------------------------- | ---------------- |
+| Lambda vs Fargate             | 適用場景與差異？ |
+| 冷啟動                        | 如何優化？       |
+| EventBridge/PubSub/Event Grid | 事件流設計？     |
+| Cloud Run/Functions           | 選型與限制？     |
+| Provisioned Concurrency       | 設計與調參？     |
 
 ---
 

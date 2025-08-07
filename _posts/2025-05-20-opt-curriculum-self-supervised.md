@@ -1,7 +1,7 @@
 ---
 title: "課程學習與自監督：Curriculum, MoCo, SimCLR, BYOL 與 Fine-tuning 策略"
 date: 2025-05-20 22:00:00 +0800
-categories: [模型訓練與優化]
+categories: [Machine Learning]
 tags: [課程學習, Curriculum Learning, Self-Supervised, MoCo, SimCLR, BYOL, Fine-tuning, Anti-Curriculum]
 ---
 
@@ -82,13 +82,13 @@ print("SimCLR 對比損失:", loss.item())
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Curriculum   | 原理與設計原則？ |
-| MoCo/SimCLR/BYOL | 差異與適用場景？ |
-| Self-Supervised | 有哪些 pretext 任務？ |
-| Fine-tuning  | 如何選擇策略？ |
-| Anti-Curriculum | 何時適用？ |
+| 主題             | 常見問題              |
+| ---------------- | --------------------- |
+| Curriculum       | 原理與設計原則？      |
+| MoCo/SimCLR/BYOL | 差異與適用場景？      |
+| Self-Supervised  | 有哪些 pretext 任務？ |
+| Fine-tuning      | 如何選擇策略？        |
+| Anti-Curriculum  | 何時適用？            |
 
 ---
 

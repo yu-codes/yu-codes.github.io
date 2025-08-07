@@ -1,8 +1,8 @@
 ---
 title: "一文搞懂 LangChain：架構、模組、實作與應用全解析"
 date: 2025-05-12 19:40:00 +0800
-categories: [Machine Learning]
-tags: [LangChain, LLM, AI 應用, Python, Chain of Thought]
+categories: [LLM]
+tags: [LangChain]
 ---
 
 # 一文搞懂 LangChain：架構、模組、實作與應用全解析
@@ -151,25 +151,25 @@ qa_chain.run("這份文件的作者是誰？")
 
 ## ⚙️ LangChain 生態整合（可搭配）
 
-| 工具 / 系統                       | 說明                            |
-| ----------------------------- | ----------------------------- |
-| **FAISS / Chroma / Weaviate** | 建立文件索引與向量查詢                   |
-| **Streamlit / Gradio**        | 快速部署互動介面                      |
-| **FastAPI / Flask**           | 建立 LangChain API              |
-| **LangServe**                 | LangChain 官方部署工具              |
+| 工具 / 系統                   | 說明                                      |
+| ----------------------------- | ----------------------------------------- |
+| **FAISS / Chroma / Weaviate** | 建立文件索引與向量查詢                    |
+| **Streamlit / Gradio**        | 快速部署互動介面                          |
+| **FastAPI / Flask**           | 建立 LangChain API                        |
+| **LangServe**                 | LangChain 官方部署工具                    |
 | **LangSmith**                 | Debug 與記錄 Chain 的追蹤工具（類似 APM） |
 
 ---
 
 ## 💡 常見應用場景
 
-| 類型        | 說明                        |
-| --------- | ------------------------- |
-| Chatbot   | 建立具記憶與推理能力的對話機器人          |
-| ChatPDF   | 將 PDF 轉成向量資料，供問答系統使用      |
-| 資料助手      | 擷取知識庫內容並以自然語言回答           |
-| 多工具 Agent | 可控制計算機、API、網頁查詢的智慧助手      |
-| 自訂 Chain  | 包裝任務流程：例如「摘要 + 翻譯 + 寫信」流程 |
+| 類型         | 說明                                         |
+| ------------ | -------------------------------------------- |
+| Chatbot      | 建立具記憶與推理能力的對話機器人             |
+| ChatPDF      | 將 PDF 轉成向量資料，供問答系統使用          |
+| 資料助手     | 擷取知識庫內容並以自然語言回答               |
+| 多工具 Agent | 可控制計算機、API、網頁查詢的智慧助手        |
+| 自訂 Chain   | 包裝任務流程：例如「摘要 + 翻譯 + 寫信」流程 |
 
 ---
 

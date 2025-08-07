@@ -1,7 +1,7 @@
 ---
 title: "Auto-Scaling & 成本最佳化：HPA/VPA/KPA、Spot Fleet、Savings Plan"
 date: 2025-05-23 21:00:00 +0800
-categories: [雲端部署與服務]
+categories: [Cloud Deployment & Services]
 tags: [Auto-Scaling, HPA, VPA, KPA, Spot Fleet, Spot Capacity, Savings Plan, Committed Use, 成本最佳化]
 ---
 
@@ -89,11 +89,11 @@ tags: [Auto-Scaling, HPA, VPA, KPA, Spot Fleet, Spot Capacity, Savings Plan, Com
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| HPA/VPA/KPA  | 差異與選型？ |
-| Spot Fleet   | 原理與設計？ |
-| Savings Plan | 適用場景與風險？ |
+| 主題         | 常見問題           |
+| ------------ | ------------------ |
+| HPA/VPA/KPA  | 差異與選型？       |
+| Spot Fleet   | 原理與設計？       |
+| Savings Plan | 適用場景與風險？   |
 | 多池部署     | 如何降低搶佔風險？ |
 | 成本最佳化   | 如何動態調整策略？ |
 

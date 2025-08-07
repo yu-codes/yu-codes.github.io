@@ -1,7 +1,7 @@
 ---
 title: "Pandas 與新世代加速：Dask、Modin、Polars、10TB Click-stream 清洗實戰"
 date: 2025-05-21 18:00:00 +0800
-categories: [數據工程]
+categories: [Data Engineering]
 tags: [Pandas, Dask, Modin, Polars, Vaex, Vectorization, Chunk, Click-stream, 分散式, 加速]
 ---
 
@@ -69,13 +69,13 @@ for chunk in pd.read_csv('big.csv', chunksize=100000):
 - 針對大檔案（HDF5/Arrow），支援記憶體外運算
 - 適合單機處理 10 億級資料
 
-| 工具   | 適用場景         | 優點           | 缺點           |
-|--------|------------------|----------------|----------------|
-| Pandas | 小型資料、原型   | 生態豐富       | 記憶體限制     |
-| Dask   | 分散式 ETL       | 分散式、彈性   | 複雜度高       |
-| Modin  | 多核加速         | 幾乎無痛遷移   | 部分 API 不支援|
-| Polars | 高效能 ETL/查詢  | 快速、低記憶體 | 生態較新       |
-| Vaex   | 單機大檔案       | 記憶體外運算   | API 有差異     |
+| 工具   | 適用場景        | 優點           | 缺點            |
+| ------ | --------------- | -------------- | --------------- |
+| Pandas | 小型資料、原型  | 生態豐富       | 記憶體限制      |
+| Dask   | 分散式 ETL      | 分散式、彈性   | 複雜度高        |
+| Modin  | 多核加速        | 幾乎無痛遷移   | 部分 API 不支援 |
+| Polars | 高效能 ETL/查詢 | 快速、低記憶體 | 生態較新        |
+| Vaex   | 單機大檔案      | 記憶體外運算   | API 有差異      |
 
 ---
 
@@ -116,13 +116,13 @@ df.to_parquet('cleaned_clickstream/', compression='zstd')
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Pandas vs Dask/Modin/Polars | 何時選用？ |
-| Chunk 讀檔   | 如何避免記憶體爆炸？ |
-| Categorical  | 有何效能優勢？ |
-| 10TB 清洗    | 如何設計高效流程？ |
-| 分散式加速   | 有哪些工具與限制？ |
+| 主題                        | 常見問題             |
+| --------------------------- | -------------------- |
+| Pandas vs Dask/Modin/Polars | 何時選用？           |
+| Chunk 讀檔                  | 如何避免記憶體爆炸？ |
+| Categorical                 | 有何效能優勢？       |
+| 10TB 清洗                   | 如何設計高效流程？   |
+| 分散式加速                  | 有哪些工具與限制？   |
 
 ---
 

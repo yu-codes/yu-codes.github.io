@@ -1,7 +1,7 @@
 ---
 title: "訓練監控與 Debug：TensorBoard、Loss 爆炸/消失、Learning Curve 判讀與單元測試"
 date: 2025-05-20 21:00:00 +0800
-categories: [模型訓練與優化]
+categories: [Machine Learning]
 tags: [訓練監控, TensorBoard, Weights & Biases, Loss Exploding, Loss Vanishing, Learning Curve, Validation Gap, 單元測試]
 ---
 
@@ -99,13 +99,13 @@ from torch.autograd import gradcheck
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| TensorBoard  | 如何追蹤與可視化指標？ |
-| Loss 爆炸/消失 | 原因與解法？ |
-| Learning Curve | 如何判讀過擬合/欠擬合？ |
-| Validation Gap | 產生原因與調整方法？ |
-| 單元測試     | 如何驗證模型可微與梯度正確？ |
+| 主題           | 常見問題                     |
+| -------------- | ---------------------------- |
+| TensorBoard    | 如何追蹤與可視化指標？       |
+| Loss 爆炸/消失 | 原因與解法？                 |
+| Learning Curve | 如何判讀過擬合/欠擬合？      |
+| Validation Gap | 產生原因與調整方法？         |
+| 單元測試       | 如何驗證模型可微與梯度正確？ |
 
 ---
 

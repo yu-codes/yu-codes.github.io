@@ -1,7 +1,7 @@
 ---
 title: "超參數尋優進階：Grid/Random/Bayesian、Hyperband、PBT 與多目標優化"
 date: 2025-05-20 20:00:00 +0800
-categories: [模型訓練與優化]
+categories: [Machine Learning]
 tags: [超參數, HPO, Grid Search, Random Search, Bayesian Optimization, Hyperband, PBT, Optuna, BOHB, 多目標優化]
 ---
 
@@ -82,13 +82,13 @@ print("最佳參數:", study.best_params)
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Grid vs Random| 差異與適用場景？ |
-| Bayesian Opt | 原理與優勢？ |
-| Hyperband    | 如何加速搜尋？ |
-| PBT          | 如何提升泛化？ |
-| 多目標優化   | 如何設計與評估？ |
+| 主題           | 常見問題         |
+| -------------- | ---------------- |
+| Grid vs Random | 差異與適用場景？ |
+| Bayesian Opt   | 原理與優勢？     |
+| Hyperband      | 如何加速搜尋？   |
+| PBT            | 如何提升泛化？   |
+| 多目標優化     | 如何設計與評估？ |
 
 ---
 

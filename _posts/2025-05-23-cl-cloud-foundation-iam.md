@@ -1,7 +1,7 @@
 ---
 title: "雲端基礎 & IAM：VPC、Subnet、SG、IAM Role、資安守門與責任模型"
 date: 2025-05-23 12:00:00 +0800
-categories: [雲端部署與服務]
+categories: [Cloud Deployment & Services]
 tags: [雲端, IAM, VPC, Subnet, Security Group, KMS, Secrets Manager, STS, Well-Architected, Shared Responsibility]
 ---
 
@@ -95,13 +95,13 @@ tags: [雲端, IAM, VPC, Subnet, Security Group, KMS, Secrets Manager, STS, Well
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| VPC/Subnet   | 劃分原則與安全設計？ |
-| Security Group | 如何設計最小開放？ |
-| IAM Role     | 權限最小化與跨帳號？ |
-| KMS/Secrets  | 加密與機密管理？ |
-| Shared Responsibility | 客戶/雲端責任界線？ |
+| 主題                  | 常見問題             |
+| --------------------- | -------------------- |
+| VPC/Subnet            | 劃分原則與安全設計？ |
+| Security Group        | 如何設計最小開放？   |
+| IAM Role              | 權限最小化與跨帳號？ |
+| KMS/Secrets           | 加密與機密管理？     |
+| Shared Responsibility | 客戶/雲端責任界線？  |
 
 ---
 

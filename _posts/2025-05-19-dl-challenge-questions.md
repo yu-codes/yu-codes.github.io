@@ -1,7 +1,7 @@
 ---
 title: "深度學習挑戰題庫：12 章經典口試與白板題"
 date: 2025-05-19 23:00:00 +0800
-categories: [深度學習]
+categories: [Machine Learning]
 tags: [面試題, 深度學習, 白板題, 口試, 解題技巧]
 ---
 

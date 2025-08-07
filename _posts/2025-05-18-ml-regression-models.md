@@ -1,7 +1,7 @@
 ---
 title: "經典迴歸模型全攻略：線性、Ridge、Lasso、Logistic 與資料處理"
 date: 2025-05-18 13:00:00 +0800
-categories: [機器學習理論]
+categories: [Machine Learning]
 tags: [線性迴歸, Ridge, Lasso, Logistic Regression, Softmax, 偏態資料, 重抽樣]
 ---
 
@@ -134,13 +134,13 @@ plt.legend(); plt.title("Skewed Data Log Transform"); plt.show()
 
 ### 面試熱點
 
-| 主題                | 常見問題 |
-|---------------------|----------|
-| Ridge/Lasso         | 何時選用？數學差異？ |
-| Logistic Regression | 為何用交叉熵？如何推導？ |
-| 多項式迴歸          | 如何避免過擬合？ |
+| 主題                | 常見問題                   |
+| ------------------- | -------------------------- |
+| Ridge/Lasso         | 何時選用？數學差異？       |
+| Logistic Regression | 為何用交叉熵？如何推導？   |
+| 多項式迴歸          | 如何避免過擬合？           |
 | 偏態資料處理        | 何時用對數轉換？有何風險？ |
-| 重抽樣              | 何時用 SMOTE？有何缺點？ |
+| 重抽樣              | 何時用 SMOTE？有何缺點？   |
 
 ### 常見誤區
 

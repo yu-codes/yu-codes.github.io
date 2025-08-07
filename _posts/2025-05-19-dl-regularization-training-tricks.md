@@ -1,7 +1,7 @@
 ---
 title: "正規化與訓練技巧全攻略：BatchNorm、Dropout、Label Smoothing、MixUp、CutMix"
 date: 2025-05-19 20:00:00 +0800
-categories: [深度學習]
+categories: [Machine Learning]
 tags: [正規化, BatchNorm, LayerNorm, Dropout, Stochastic Depth, Label Smoothing, MixUp, CutMix]
 ---
 
@@ -118,12 +118,12 @@ print("Label Smoothing:", smoothed)
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| BatchNorm    | 原理與優缺點？ |
-| Residual     | 如何幫助梯度傳遞？ |
-| Dropout      | 原理與推論差異？ |
-| MixUp/CutMix | 有何優勢與限制？ |
+| 主題            | 常見問題           |
+| --------------- | ------------------ |
+| BatchNorm       | 原理與優缺點？     |
+| Residual        | 如何幫助梯度傳遞？ |
+| Dropout         | 原理與推論差異？   |
+| MixUp/CutMix    | 有何優勢與限制？   |
 | Label Smoothing | 何時用？有何效果？ |
 
 ---

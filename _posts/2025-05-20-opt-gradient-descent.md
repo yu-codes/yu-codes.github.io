@@ -1,7 +1,7 @@
 ---
 title: "梯度下降家譜：SGD、Momentum、Adam、Adaptive 優化器全解析"
 date: 2025-05-20 13:00:00 +0800
-categories: [模型訓練與優化]
+categories: [Machine Learning]
 tags: [梯度下降, SGD, Momentum, Adam, RMSProp, Nesterov, AdaGrad, AdamW, 收斂, 泛化]
 ---
 
@@ -108,13 +108,13 @@ optimizer_adamw = optim.AdamW(model.parameters(), lr=0.001)
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| SGD vs Adam  | 收斂速度與泛化差異？ |
-| Momentum     | 如何幫助跳出局部極小？ |
-| AdamW        | 為何較 Adam 泛化好？ |
-| AdaGrad/RMSProp | 適用場景與數學原理？ |
-| Nesterov     | 與 Momentum 差異？ |
+| 主題            | 常見問題               |
+| --------------- | ---------------------- |
+| SGD vs Adam     | 收斂速度與泛化差異？   |
+| Momentum        | 如何幫助跳出局部極小？ |
+| AdamW           | 為何較 Adam 泛化好？   |
+| AdaGrad/RMSProp | 適用場景與數學原理？   |
+| Nesterov        | 與 Momentum 差異？     |
 
 ---
 

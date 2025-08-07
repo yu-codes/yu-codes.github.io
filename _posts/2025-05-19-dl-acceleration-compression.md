@@ -1,7 +1,7 @@
 ---
 title: "加速與壓縮實戰：混合精度、知識蒸餾、量化、推論優化與邊緣部署"
 date: 2025-05-19 21:00:00 +0800
-categories: [深度學習]
+categories: [Machine Learning]
 tags: [混合精度, AMP, 知識蒸餾, 量化, TensorRT, ONNX, FlashAttention, Edge AI]
 ---
 
@@ -110,14 +110,14 @@ loss = F.kl_div(
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| AMP          | 原理與數值風險？ |
-| 知識蒸餾     | Teacher/Student 設計？ |
-| 量化         | QAT 與 Post-training 差異？ |
-| TensorRT/ONNX| 如何加速推論？ |
-| Flash-Attention | 如何降低複雜度？ |
-| Edge AI      | 部署挑戰與解法？ |
+| 主題            | 常見問題                    |
+| --------------- | --------------------------- |
+| AMP             | 原理與數值風險？            |
+| 知識蒸餾        | Teacher/Student 設計？      |
+| 量化            | QAT 與 Post-training 差異？ |
+| TensorRT/ONNX   | 如何加速推論？              |
+| Flash-Attention | 如何降低複雜度？            |
+| Edge AI         | 部署挑戰與解法？            |
 
 ---
 

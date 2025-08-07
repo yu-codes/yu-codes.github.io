@@ -1,7 +1,7 @@
 ---
 title: "資料格式與儲存全解析：CSV, JSON, Parquet, Arrow, Columnar 優勢與壓縮"
 date: 2025-05-21 15:00:00 +0800
-categories: [數據工程]
+categories: [Data Engineering]
 tags: [資料格式, CSV, JSON, Avro, Parquet, ORC, Arrow, Columnar, 壓縮, RLE, ZSTD, Memory Mapping]
 ---
 
@@ -13,13 +13,13 @@ tags: [資料格式, CSV, JSON, Avro, Parquet, ORC, Arrow, Columnar, 壓縮, RLE
 
 ## 常見資料格式比較：CSV, JSON, Avro, Parquet, ORC
 
-| 格式    | 結構       | 壓縮 | 架構 | 適用場景           | 優點                | 缺點                |
-|---------|------------|------|------|--------------------|---------------------|---------------------|
-| CSV     | 純文字     | 無   | Row  | 簡單批次、匯入匯出 | 易讀、通用          | 無型別、無壓縮      |
-| JSON    | 樹狀/半結構| 無   | Row  | API、半結構資料    | 彈性高、易解析      | 無型別、無壓縮      |
-| Avro    | 二進位     | 有   | Row  | Kafka、CDC         | 支援 schema、壓縮   | 不易人工檢查        |
-| Parquet | 二進位     | 有   | Columnar | 數據湖、分析查詢 | 查詢快、壓縮佳      | 不適合頻繁寫入      |
-| ORC     | 二進位     | 有   | Columnar | Hive、Spark       | 查詢快、壓縮佳      | 工具支援較少        |
+| 格式    | 結構        | 壓縮 | 架構     | 適用場景           | 優點              | 缺點           |
+| ------- | ----------- | ---- | -------- | ------------------ | ----------------- | -------------- |
+| CSV     | 純文字      | 無   | Row      | 簡單批次、匯入匯出 | 易讀、通用        | 無型別、無壓縮 |
+| JSON    | 樹狀/半結構 | 無   | Row      | API、半結構資料    | 彈性高、易解析    | 無型別、無壓縮 |
+| Avro    | 二進位      | 有   | Row      | Kafka、CDC         | 支援 schema、壓縮 | 不易人工檢查   |
+| Parquet | 二進位      | 有   | Columnar | 數據湖、分析查詢   | 查詢快、壓縮佳    | 不適合頻繁寫入 |
+| ORC     | 二進位      | 有   | Columnar | Hive、Spark        | 查詢快、壓縮佳    | 工具支援較少   |
 
 ---
 
@@ -96,13 +96,13 @@ table2 = pq.read_table('demo.parquet', memory_map=True)
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
+| 主題           | 常見問題             |
+| -------------- | -------------------- |
 | Parquet vs CSV | 查詢/壓縮/適用場景？ |
-| Columnar 優勢 | 為何適合 OLAP？ |
-| RLE/ZSTD     | 原理與適用欄位？ |
-| Arrow        | 零複製如何實現？ |
-| 格式選型     | 如何根據場景選擇？ |
+| Columnar 優勢  | 為何適合 OLAP？      |
+| RLE/ZSTD       | 原理與適用欄位？     |
+| Arrow          | 零複製如何實現？     |
+| 格式選型       | 如何根據場景選擇？   |
 
 ---
 

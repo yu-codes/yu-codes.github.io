@@ -1,7 +1,7 @@
 ---
 title: "模型版本與 Registry：MLflow、SageMaker、Semantic Versioning 與 Promote 流程"
 date: 2025-05-22 17:00:00 +0800
-categories: [大型系統設計與MLOps]
+categories: [System Design & MLOps]
 tags: [模型版本, Model Registry, MLflow, SageMaker, Semantic Versioning, Promote, Staging, Production]
 ---
 
@@ -81,13 +81,13 @@ client.transition_model_version_stage("my_model", 1, stage="Staging")
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Model Registry | 作用與設計要點？ |
-| MLflow/SageMaker | 註冊與 Promote 流程？ |
-| Semantic Versioning | 如何設計與管理？ |
-| 多版本共存   | 如何隔離與回滾？ |
-| Promote 流程 | 自動化與監控細節？ |
+| 主題                | 常見問題              |
+| ------------------- | --------------------- |
+| Model Registry      | 作用與設計要點？      |
+| MLflow/SageMaker    | 註冊與 Promote 流程？ |
+| Semantic Versioning | 如何設計與管理？      |
+| 多版本共存          | 如何隔離與回滾？      |
+| Promote 流程        | 自動化與監控細節？    |
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes 管理全攻略：EKS/GKE/AKS、Karpenter、Helm、ArgoCD"
 date: 2025-05-23 17:00:00 +0800
-categories: [雲端部署與服務]
+categories: [Cloud Deployment & Services]
 tags: [Kubernetes, EKS, GKE, AKS, Karpenter, Cluster Autoscaler, Helm, ArgoCD, 管理, 套件化, 自動擴縮]
 ---
 
@@ -102,13 +102,13 @@ resources:
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| EKS/GKE/AKS  | 差異與選型？ |
-| Karpenter/Cluster Autoscaler | 原理與適用場景？ |
-| Helm/ArgoCD  | 套件化與 GitOps？ |
-| Node Pool    | 如何設計與調參？ |
-| 多雲管理     | 挑戰與解法？ |
+| 主題                         | 常見問題          |
+| ---------------------------- | ----------------- |
+| EKS/GKE/AKS                  | 差異與選型？      |
+| Karpenter/Cluster Autoscaler | 原理與適用場景？  |
+| Helm/ArgoCD                  | 套件化與 GitOps？ |
+| Node Pool                    | 如何設計與調參？  |
+| 多雲管理                     | 挑戰與解法？      |
 
 ---
 

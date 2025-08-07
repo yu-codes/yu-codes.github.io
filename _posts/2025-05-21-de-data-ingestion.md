@@ -1,7 +1,7 @@
 ---
 title: "資料採集與 Ingestion 全攻略：API、Webhook、CDC、Kafka、Schema 設計與實戰"
 date: 2025-05-21 13:00:00 +0800
-categories: [數據工程]
+categories: [Data Engineering]
 tags: [Data Ingestion, API, Webhook, CDC, Kafka, Kinesis, PubSub, Partition Key, Schema on Read, Schema on Write]
 ---
 
@@ -101,10 +101,10 @@ producer.send('orders', key=b'user_123', value=b'order_data')
 - 支援多格式共存、彈性探索、資料湖治理
 - 需設計讀取時 schema 驗證、異常補償
 
-| 策略           | 優點                   | 缺點                   | 適用場景           |
-|----------------|------------------------|------------------------|--------------------|
-| Schema on Write| 資料一致性高，易治理   | 彈性低，需預先定義     | 倉庫、金融、報表   |
-| Schema on Read | 彈性高，支援多格式     | 讀取時易出錯，治理難   | 資料湖、IoT、探索  |
+| 策略            | 優點                 | 缺點                 | 適用場景          |
+| --------------- | -------------------- | -------------------- | ----------------- |
+| Schema on Write | 資料一致性高，易治理 | 彈性低，需預先定義   | 倉庫、金融、報表  |
+| Schema on Read  | 彈性高，支援多格式   | 讀取時易出錯，治理難 | 資料湖、IoT、探索 |
 
 ---
 
@@ -136,13 +136,13 @@ producer.send('orders', key=b'user_123', value=b'order_data')
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| API vs Webhook | 適用場景與設計差異？ |
-| CDC           | 如何確保資料一致性？ |
-| Partition Key | 如何避免分區熱點？ |
-| Schema 策略   | 何時選用 Read/Write？ |
-| Kafka         | 如何設計高吞吐資料流？ |
+| 主題           | 常見問題               |
+| -------------- | ---------------------- |
+| API vs Webhook | 適用場景與設計差異？   |
+| CDC            | 如何確保資料一致性？   |
+| Partition Key  | 如何避免分區熱點？     |
+| Schema 策略    | 何時選用 Read/Write？  |
+| Kafka          | 如何設計高吞吐資料流？ |
 
 ---
 

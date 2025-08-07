@@ -1,7 +1,7 @@
 ---
 title: "AWS AI 生態圈全解析：SageMaker、Bedrock、Batch/Endpoint、Auto-Scaling"
 date: 2025-05-23 13:00:00 +0800
-categories: [雲端部署與服務]
+categories: [Cloud Deployment & Services]
 tags: [AWS, SageMaker, Bedrock, Titan, Embedding, JumpStart, Inference, Batch Transform, Endpoint, Auto-Scaling]
 ---
 
@@ -91,13 +91,13 @@ AWS 提供完整的 AI 平台與服務，從 SageMaker Studio、JumpStart、Infe
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| SageMaker Studio | 功能與適用場景？ |
-| JumpStart    | 如何快速部署 LLM？ |
-| Bedrock/Titan | 差異與應用？ |
-| Batch vs Endpoint | 選型與設計原則？ |
-| Auto-Scaling | 如何設計與調參？ |
+| 主題              | 常見問題           |
+| ----------------- | ------------------ |
+| SageMaker Studio  | 功能與適用場景？   |
+| JumpStart         | 如何快速部署 LLM？ |
+| Bedrock/Titan     | 差異與應用？       |
+| Batch vs Endpoint | 選型與設計原則？   |
+| Auto-Scaling      | 如何設計與調參？   |
 
 ---
 

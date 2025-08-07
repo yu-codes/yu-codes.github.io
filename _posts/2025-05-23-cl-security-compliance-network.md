@@ -1,7 +1,7 @@
 ---
 title: "安全・合規・網路全攻略：VPC Peering、Zero-Trust、GDPR/HIPAA/ISO 27001"
 date: 2025-05-23 23:30:00 +0800
-categories: [雲端部署與服務]
+categories: [Cloud Deployment & Services]
 tags: [安全, 合規, 網路, VPC Peering, PrivateLink, Service Mesh, Zero-Trust, IAM, GDPR, HIPAA, ISO 27001]
 ---
 
@@ -91,13 +91,13 @@ tags: [安全, 合規, 網路, VPC Peering, PrivateLink, Service Mesh, Zero-Trus
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| VPC Peering/PrivateLink | 差異與應用？ |
-| Service Mesh/Istio | 流量加密與權限？ |
-| Zero-Trust   | 原理與落地挑戰？ |
-| GDPR/HIPAA/ISO 27001 | 合規要求與設計？ |
-| IAM 最小權限 | 如何審查與輪換？ |
+| 主題                    | 常見問題         |
+| ----------------------- | ---------------- |
+| VPC Peering/PrivateLink | 差異與應用？     |
+| Service Mesh/Istio      | 流量加密與權限？ |
+| Zero-Trust              | 原理與落地挑戰？ |
+| GDPR/HIPAA/ISO 27001    | 合規要求與設計？ |
+| IAM 最小權限            | 如何審查與輪換？ |
 
 ---
 

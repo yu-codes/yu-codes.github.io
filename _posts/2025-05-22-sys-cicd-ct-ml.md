@@ -1,7 +1,7 @@
 ---
 title: "CI/CD/CT for ML：Code/Data/Model CI、藍綠/Canary 部署與持續訓練"
 date: 2025-05-22 19:00:00 +0800
-categories: [大型系統設計與MLOps]
+categories: [System Design & MLOps]
 tags: [CI/CD, CT, MLOps, Data Validation, Model CI, Canary, Blue-Green, Shadow Deployment, Continuous Training]
 ---
 
@@ -94,13 +94,13 @@ jobs:
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Code/Data/Model CI | 差異與設計要點？ |
-| 藍綠/Canary/Shadow | 部署策略與選型？ |
-| CT           | 觸發條件與自動化？ |
-| pipeline versioning | 如何追蹤與回溯？ |
-| 部署回滾     | 如何設計？ |
+| 主題                | 常見問題           |
+| ------------------- | ------------------ |
+| Code/Data/Model CI  | 差異與設計要點？   |
+| 藍綠/Canary/Shadow  | 部署策略與選型？   |
+| CT                  | 觸發條件與自動化？ |
+| pipeline versioning | 如何追蹤與回溯？   |
+| 部署回滾            | 如何設計？         |
 
 ---
 

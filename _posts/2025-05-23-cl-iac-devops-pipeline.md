@@ -1,7 +1,7 @@
 ---
 title: "IaC & DevOps 管線全攻略：Terraform、CloudFormation、ArgoCD、Spinnaker"
 date: 2025-05-23 23:00:00 +0800
-categories: [雲端部署與服務]
+categories: [Cloud Deployment & Services]
 tags: [IaC, Terraform, CloudFormation, Bicep, DevOps, ArgoCD, Spinnaker, GitHub Actions, ECR, EKS, Rolling, Sync Policy]
 ---
 
@@ -95,13 +95,13 @@ jobs:
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Terraform/CloudFormation/Bicep | 差異與選型？ |
-| GitHub Actions/ECR/EKS | CI/CD 流程設計？ |
-| ArgoCD Sync Policy | 功能與應用？ |
-| Spinnaker Pipeline | 多階段設計？ |
-| IaC/DevOps pipeline | 回滾與審計？ |
+| 主題                           | 常見問題         |
+| ------------------------------ | ---------------- |
+| Terraform/CloudFormation/Bicep | 差異與選型？     |
+| GitHub Actions/ECR/EKS         | CI/CD 流程設計？ |
+| ArgoCD Sync Policy             | 功能與應用？     |
+| Spinnaker Pipeline             | 多階段設計？     |
+| IaC/DevOps pipeline            | 回滾與審計？     |
 
 ---
 
