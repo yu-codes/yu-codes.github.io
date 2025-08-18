@@ -175,8 +175,7 @@ collections:
     sort_by: order
   articles:
     output: true
-    directory: _posts
-    permalink: /posts/:categories/:title/
+    permalink: /articles/:categories/:title/
 
 defaults:
   - scope:
