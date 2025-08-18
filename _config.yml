@@ -170,9 +170,9 @@ kramdown:
       start_line: 1
 
 collections:
-#  tabs:
-#    output: true
-#    sort_by: order
+  tabs:
+    output: true
+    sort_by: order
   articles:
     output: true
     directory: _posts
