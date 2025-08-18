@@ -187,6 +187,14 @@ defaults:
       toc: true
       permalink: /posts/:categories/:title/
   - scope:
+      path: ""
+      type: articles
+    values:
+      layout: post
+      comments: true
+      toc: true
+      permalink: /articles/:categories/:title/
+  - scope:
       path: _drafts
     values:
       comments: false
