@@ -5,118 +5,228 @@ refactor: true
 
 {% include lang.html %}
 
-{% assign all_pinned = site.posts | where: 'pin', 'true' %}
-{% assign all_normal = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
+{% assign all_posts = site.posts | where_exp: 'item', 'item.hidden != true' %}
+{% assign all_articles = site.articles | where_exp: 'item', 'item.hidden != true' %}
+{% assign all_content = all_posts | concat: all_articles | sort: 'date' | reverse %}
 
-{% assign posts = '' | split: '' %}
+<!-- Get pinned content for featured section -->
+{% assign pinned_content = all_content | where: 'pin', 'true' %}
+<!-- Get latest content (excluding pinned) -->
+{% assign latest_content = all_content | where_exp: 'item', 'item.pin != true' | slice: 0, 5 %}
 
-<!-- Get pinned posts on current page -->
-
-{% assign visible_start = paginator.page | minus: 1 | times: paginator.per_page %}
-{% assign visible_end = visible_start | plus: paginator.per_page %}
-
-{% if all_pinned.size > visible_start %}
-  {% if all_pinned.size > visible_end %}
-    {% assign pinned_size = paginator.per_page %}
-  {% else %}
-    {% assign pinned_size = all_pinned.size | minus: visible_start %}
-  {% endif %}
-
-  {% for i in (visible_start..all_pinned.size) limit: pinned_size %}
-    {% assign posts = posts | push: all_pinned[i] %}
-  {% endfor %}
-{% else %}
-  {% assign pinned_size = 0 %}
-{% endif %}
-
-<!-- Get normal posts on current page -->
-
-{% assign normal_size = paginator.posts | size | minus: pinned_size %}
-
-{% if normal_size > 0 %}
-  {% if pinned_size > 0 %}
-    {% assign normal_start = 0 %}
-  {% else %}
-    {% assign normal_start = visible_start | minus: all_pinned.size %}
-  {% endif %}
-
-  {% assign normal_end = normal_start | plus: normal_size | minus: 1 %}
-
-  {% for i in (normal_start..normal_end) %}
-    {% assign posts = posts | push: all_normal[i] %}
-  {% endfor %}
-{% endif %}
-
-<div id="post-list" class="flex-grow-1 px-xl-1">
-  {% for post in posts %}
-    <article class="card-wrapper card">
-      <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
-        {% assign card_body_col = '12' %}
-
-        {% if post.image %}
-          {% assign src = post.image.path | default: post.image %}
-          {% unless src contains '//' %}
-            {% assign src = post.media_subpath | append: '/' | append: src | replace: '//', '/' %}
-          {% endunless %}
-
-          {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
-
-          {% assign lqip = null %}
-
-          {% if post.image.lqip %}
-            {% capture lqip %}lqip="{{ post.image.lqip }}"{% endcapture %}
+<!-- Hero Section -->
+<div class="hero-section mb-5">
+  <div class="row align-items-center">
+    <div class="col-md-8">
+      <h1 class="display-4 fw-bold mb-3">{{ site.social.name | default: site.title }}</h1>
+      <p class="lead mb-4">{{ site.tagline | default: "Developer, dreamer, debugger." }}</p>
+      <p class="text-muted mb-4">{{ site.description | strip_html | truncate: 150 }}</p>
+      
+      <!-- Social Links -->
+      <div class="social-links">
+        {% for link in site.social.links %}
+          {% if link contains 'github' %}
+            <a href="{{ link }}" class="btn btn-outline-primary me-2 mb-2">
+              <i class="fab fa-github me-1"></i>GitHub
+            </a>
+          {% elsif link contains 'linkedin' %}
+            <a href="{{ link }}" class="btn btn-outline-primary me-2 mb-2">
+              <i class="fab fa-linkedin me-1"></i>LinkedIn
+            </a>
+          {% elsif link contains 'twitter' %}
+            <a href="{{ link }}" class="btn btn-outline-primary me-2 mb-2">
+              <i class="fab fa-twitter me-1"></i>Twitter
+            </a>
           {% endif %}
-
-          <div class="col-md-5">
-            <img src="{{ src }}" alt="{{ alt }}" {{ lqip }}>
-          </div>
-
-          {% assign card_body_col = '7' %}
-        {% endif %}
-
-        <div class="col-md-{{ card_body_col }}">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">{{ post.title }}</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>{% include post-description.html %}</p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                {% include datetime.html date=post.date lang=lang %}
-
-                <!-- categories -->
-                {% if post.categories.size > 0 %}
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    {% for category in post.categories %}
-                      {{ category }}
-                      {%- unless forloop.last -%},{%- endunless -%}
-                    {% endfor %}
-                  </span>
-                {% endif %}
-              </div>
-
-              {% if post.pin %}
-                <div class="pin ms-1">
-                  <i class="fas fa-thumbtack fa-fw"></i>
-                  <span>{{ site.data.locales[lang].post.pin_prompt }}</span>
-                </div>
-              {% endif %}
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+    
+    {% if site.avatar %}
+    <div class="col-md-4 text-center">
+      <img src="{{ site.avatar }}" alt="{{ site.social.name }}" 
+           class="img-fluid rounded-circle shadow" style="max-width: 200px;">
+    </div>
+    {% endif %}
+  </div>
 </div>
-<!-- #post-list -->
 
-{% if paginator.total_pages > 1 %}
-  {% include post-paginator.html %}
+<!-- Quick Stats -->
+<div class="stats-section mb-5">
+  <div class="row text-center">
+    <div class="col-md-3 col-6 mb-3">
+      <div class="card h-100">
+        <div class="card-body">
+          <h3 class="text-primary">{{ all_content.size }}</h3>
+          <p class="text-muted mb-0">{{ site.data.locales[lang].layout.post | default: "Posts" }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-6 mb-3">
+      <div class="card h-100">
+        <div class="card-body">
+          {% assign categories = '' | split: '' %}
+          {% for item in all_content %}
+            {% for cat in item.categories %}
+              {% unless categories contains cat %}
+                {% assign categories = categories | push: cat %}
+              {% endunless %}
+            {% endfor %}
+          {% endfor %}
+          <h3 class="text-success">{{ categories.size }}</h3>
+          <p class="text-muted mb-0">{{ site.data.locales[lang].layout.category | default: "Categories" }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-6 mb-3">
+      <div class="card h-100">
+        <div class="card-body">
+          {% assign tags = '' | split: '' %}
+          {% for item in all_content %}
+            {% for tag in item.tags %}
+              {% unless tags contains tag %}
+                {% assign tags = tags | push: tag %}
+              {% endunless %}
+            {% endfor %}
+          {% endfor %}
+          <h3 class="text-info">{{ tags.size }}</h3>
+          <p class="text-muted mb-0">{{ site.data.locales[lang].layout.tag | default: "Tags" }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-6 mb-3">
+      <div class="card h-100">
+        <div class="card-body">
+          <h3 class="text-warning">{{ all_articles.size }}</h3>
+          <p class="text-muted mb-0">{{ site.data.locales[lang].tabs.articles | default: "Articles" }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Featured/Pinned Content -->
+{% if pinned_content.size > 0 %}
+<div class="featured-section mb-5">
+  <h2 class="h3 mb-4">
+    <i class="fas fa-thumbtack me-2 text-warning"></i>
+    {{ site.data.locales[lang].layout.featured | default: "Featured Posts" }}
+  </h2>
+  <div class="row">
+    {% for post in pinned_content limit: 3 %}
+    <div class="col-md-4 mb-4">
+      <article class="card h-100 shadow-sm">
+        {% if post.image %}
+        <img src="{{ post.image.path | default: post.image }}" 
+             class="card-img-top" alt="{{ post.title }}" style="height: 200px; object-fit: cover;">
+        {% endif %}
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">
+            <a href="{{ post.url | relative_url }}" class="text-decoration-none">{{ post.title }}</a>
+          </h5>
+          <p class="card-text text-muted small mb-2">
+            <i class="far fa-calendar me-1"></i>
+            {% include datetime.html date=post.date lang=lang %}
+          </p>
+          {% if post.description %}
+          <p class="card-text flex-grow-1">{{ post.description | truncate: 100 }}</p>
+          {% endif %}
+          <div class="mt-auto">
+            {% if post.categories.size > 0 %}
+            <span class="badge bg-primary me-1">{{ post.categories.first }}</span>
+            {% endif %}
+            {% if post.tags.size > 0 %}
+            <span class="badge bg-secondary">{{ post.tags.first }}</span>
+            {% endif %}
+          </div>
+        </div>
+      </article>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 {% endif %}
+
+<!-- Latest Content -->
+{% if latest_content.size > 0 %}
+<div class="latest-section mb-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="h3 mb-0">
+      <i class="far fa-clock me-2 text-primary"></i>
+      {{ site.data.locales[lang].layout.latest | default: "Latest Posts" }}
+    </h2>
+    <a href="/archives" class="btn btn-outline-primary btn-sm">
+      {{ site.data.locales[lang].layout.view_all | default: "View All" }}
+      <i class="fas fa-arrow-right ms-1"></i>
+    </a>
+  </div>
+  
+  <div class="list-group">
+    {% for post in latest_content %}
+    <a href="{{ post.url | relative_url }}" 
+       class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">{{ post.title }}</div>
+        <small class="text-muted">
+          <i class="far fa-calendar me-1"></i>
+          {% include datetime.html date=post.date lang=lang %}
+          {% if post.categories.size > 0 %}
+          <span class="ms-2">
+            <i class="far fa-folder me-1"></i>{{ post.categories.first }}
+          </span>
+          {% endif %}
+        </small>
+      </div>
+      {% if post.pin %}
+      <span class="badge bg-warning rounded-pill">
+        <i class="fas fa-thumbtack"></i>
+      </span>
+      {% endif %}
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<!-- Quick Navigation -->
+<div class="navigation-section">
+  <h2 class="h3 mb-4">
+    <i class="fas fa-compass me-2 text-success"></i>
+    {{ site.data.locales[lang].layout.explore | default: "Explore" }}
+  </h2>
+  
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <div class="card text-center h-100">
+        <div class="card-body">
+          <i class="fas fa-file-alt fa-2x text-primary mb-3"></i>
+          <h5 class="card-title">{{ site.data.locales[lang].tabs.archives | default: "Archives" }}</h5>
+          <p class="card-text text-muted">{{ site.data.locales[lang].layout.archives_desc | default: "Browse all posts by date" }}</p>
+          <a href="/archives" class="btn btn-primary">{{ site.data.locales[lang].layout.browse | default: "Browse" }}</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4 mb-3">
+      <div class="card text-center h-100">
+        <div class="card-body">
+          <i class="fas fa-folder-open fa-2x text-success mb-3"></i>
+          <h5 class="card-title">{{ site.data.locales[lang].tabs.categories | default: "Categories" }}</h5>
+          <p class="card-text text-muted">{{ site.data.locales[lang].layout.categories_desc | default: "Explore posts by topic" }}</p>
+          <a href="/categories" class="btn btn-success">{{ site.data.locales[lang].layout.explore | default: "Explore" }}</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4 mb-3">
+      <div class="card text-center h-100">
+        <div class="card-body">
+          <i class="fas fa-book fa-2x text-info mb-3"></i>
+          <h5 class="card-title">{{ site.data.locales[lang].tabs.articles | default: "Articles" }}</h5>
+          <p class="card-text text-muted">{{ site.data.locales[lang].layout.articles_desc | default: "In-depth technical articles" }}</p>
+          <a href="/articles" class="btn btn-info">{{ site.data.locales[lang].layout.read | default: "Read" }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

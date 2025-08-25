@@ -1,9 +1,11 @@
 ---
 title: "打造高流量系統的系統設計終極指南"
 date: 2025-05-11 10:30:00 +0800
-categories: \[System Design, Scalability]
-tags: \[High Traffic, Architecture, Backend, Cache, Load Balancing, DevOps]
----------------------------------------------------------------------------
+categories: [System Design, Scalability]
+tags: [High Traffic, Architecture, Backend, Cache, Load Balancing, DevOps]
+description: "從基礎到進階，完整介紹打造高可用、高擴展、高效能系統的各種設計原則與技術選型"
+pin: true
+---
 
 # 打造高流量系統的系統設計終極指南
 
@@ -25,12 +27,12 @@ tags: \[High Traffic, Architecture, Backend, Cache, Load Balancing, DevOps]
 
 ## 🏛️ 核心設計目標
 
-| 目標      | 說明                          |
-| ------- | --------------------------- |
-| 高可用性    | 不會因部分故障導致全站宕機（容錯、健康檢查、自動復原） |
-| 可擴展性    | 能根據流量水平擴充，支援多實例、多機房部署       |
-| 韌性與緩衝能力 | 突發請求不炸鍋，能有效削峰填谷（非同步、排隊、快取）  |
-| 易觀察易維運  | 出事能追、能告警、能復原（監控、日誌、Tracing） |
+| 目標           | 說明                                                   |
+| -------------- | ------------------------------------------------------ |
+| 高可用性       | 不會因部分故障導致全站宕機（容錯、健康檢查、自動復原） |
+| 可擴展性       | 能根據流量水平擴充，支援多實例、多機房部署             |
+| 韌性與緩衝能力 | 突發請求不炸鍋，能有效削峰填谷（非同步、排隊、快取）   |
+| 易觀察易維運   | 出事能追、能告警、能復原（監控、日誌、Tracing）        |
 
 ---
 
@@ -127,7 +129,7 @@ tags: \[High Traffic, Architecture, Backend, Cache, Load Balancing, DevOps]
 
 ## ⚡️ 快速擴充的雲端基礎建設建議
 
-| 項目         | 技術建議                                    |
+| 項目       | 技術建議                                |
 | ---------- | --------------------------------------- |
 | Compute    | AWS EC2 / ECS / Kubernetes / Serverless |
 | Storage    | Amazon S3 / EFS / GCS                   |

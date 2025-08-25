@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  jekyll-dev:
+    build: 
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "4000:4000"      # Jekyll 服務器
+      - "35729:35729"    # LiveReload
+    volumes:
+      - ..:/app           # 掛載專案目錄
+      - jekyll_cache:/app/.jekyll-cache
+      - bundle_cache:/app/.bundle
+      - node_modules:/app/node_modules
+    environment:
+      - JEKYLL_ENV=development
+      - BUNDLE_PATH=/app/.bundle
+    command: >
+      sh -c "
+        bundle install &&
+        npm install &&
+        bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling --drafts
+      "
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+
+volumes:
+  jekyll_cache:
+  bundle_cache:
+  node_modules:

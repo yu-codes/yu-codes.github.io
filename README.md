@@ -1,22 +1,4 @@
-<!-- markdownlint-disable-next-line -->
-<div align="center">
-
-  <!-- markdownlint-disable-next-line -->
-  # Yu Codes Blog
-
-  基於 Jekyll 打造的個人技術部落格，分享程式開發、技術筆記與學習心得，致力於成為更好的工程師。
-
-  [![CI](https://img.shields.io/github/actions/workflow/status/yu-codes/yu-codes.github.io/ci.yml?logo=github)][ci]&nbsp;
-  [![GitHub license](https://img.shields.io/github/license/yu-codes/yu-codes.github.io?color=goldenrod)][license]&nbsp;
-  [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?logo=github-pages)][demo]
-
-  [**訪問部落格 →**][demo]
-
-  [![Blog Preview](https://chirpy-img.netlify.app/commons/devices-mockup.png)][demo]
-
-</div>
-
-## 關於這個專案
+# Yu Codes Blog
 
 這是一個個人技術部落格專案，專注於分享軟體開發知識、程式設計最佳實務、技術教學文章，並記錄個人成長與學習歷程。採用靜態網站生成器架構，確保快速載入與良好的SEO表現。
 
@@ -28,18 +10,7 @@
 - **DevOops**：CI/CD、容器化、雲端部署
 - **演算法與資料結構**：面試準備、解題思路
 
-## 主要功能
 
-- 🌓 深色與淺色主題切換
-- 📂 文章分類與標籤系統
-- 📋 文章目錄導航
-- 🎨 程式碼語法高亮
-- 🔍 全站搜尋功能
-- 📱 響應式設計，支援各種裝置
-- ⚡ Progressive Web App (PWA) 支援
-- 🚀 SEO 優化與效能最佳化
-- 💬 留言系統整合
-- 📊 Google Analytics 整合
 
 ## 專案結構
 
@@ -48,7 +19,12 @@ yu-codes.github.io/
 ├── 📄 核心配置文件
 │   ├── _config.yml          # 網站主要配置
 │   ├── index.html           # 網站入口頁面
-│   └── Gemfile             # Ruby 依賴管理
+│   ├── Gemfile             # Ruby 依賴管理
+│   ├── package.json        # Node.js 依賴管理
+│ # 1. 啟動 Docker 開發環境
+.\dev.bat               # Windows
+# 或
+bash dev.sh             # macOS/Linux─ jekyll-theme-chirpy.gemspec  # Gem 主題規格
 │
 ├── 📂 內容管理 (分類目錄組織)
 │   ├── _posts/             # 部落格文章 (按分類組織)
@@ -62,46 +38,14 @@ yu-codes.github.io/
 │   │   │   ├── classification-algorithms.md
 │   │   │   ├── linear-algebra-for-ai.md
 │   │   │   └── ...
-│   │   ├── deep-learning/       # 深度學習文章 (12篇)
-│   │   │   ├── transformer-family.md
-│   │   │   ├── attention-mechanism.md
-│   │   │   ├── cnn-essentials.md
-│   │   │   └── ...
-│   │   ├── optimization/        # 優化技術文章 (13篇)
-│   │   │   ├── gradient-descent.md
-│   │   │   ├── learning-rate-schedule.md
-│   │   │   ├── regularization-toolkit.md
-│   │   │   └── ...
-│   │   ├── system-design/       # 系統設計文章 (12篇)
-│   │   │   ├── system-design-mindset.md
-│   │   │   ├── traffic-ha-strategy.md
-│   │   │   ├── feature-store-design.md
-│   │   │   └── ...
-│   │   ├── cloud/              # 雲端技術文章 (13篇)
-│   │   │   ├── aws-ai-ecosystem.md
-│   │   │   ├── kubernetes-management.md
-│   │   │   ├── auto-scaling-cost-opt.md
-│   │   │   └── ...
-│   │   ├── algorithm/          # 演算法與資料結構 (7篇)
-│   │   │   ├── array.md
-│   │   │   ├── tree.md
-│   │   │   ├── hashtable.md
-│   │   │   └── ...
-│   │   ├── backend/            # 後端開發文章 (5篇)
-│   │   │   ├── fastapi.md
-│   │   │   ├── webhook.md
-│   │   │   ├── language-sql.md
-│   │   │   └── ...
-│   │   └── devops/             # DevOps 文章 (4篇)
-│   │       ├── cicd.md
-│   │       ├── github.md
-│   │       ├── ngrok.md
-│   │       └── ...
+│   │   └── ...
+|   |   
 │   ├── _tabs/              # 導航頁面
 │   │   ├── archives.md     # 文章歸檔
 │   │   ├── categories.md   # 分類頁面
 │   │   ├── tags.md         # 標籤頁面
 │   │   └── resume.md       # 個人履歷
+|   |
 │   └── assets/             # 靜態資源
 │       ├── img/            # 圖片資源
 │       ├── css/            # 編譯後的 CSS
@@ -129,23 +73,43 @@ yu-codes.github.io/
 │   │   ├── theme.js        # 主題切換功能
 │   │   ├── modules/        # 可重用模組
 │   │   └── pwa/           # Progressive Web App 功能
-│   ├── package.json        # Node.js 依賴與建置腳本
 │   ├── rollup.config.js    # JavaScript 打包配置
 │   ├── purgecss.js         # CSS 優化配置
 │   └── eslint.config.js    # 代碼品質檢查
 │
 ├── 📂 開發與部署工具
+│   ├── 🐳 Docker 開發環境
+│   │   ├── docker/             # Docker 配置目錄 📁 新整理
+│   │   │   ├── Dockerfile      # Docker 映像配置
+│   │   │   ├── docker-compose.yml     # 基本 Docker Compose
+│   │   │   ├── docker-compose.dev.yml # 開發環境配置
+│   │   │   ├── .dockerignore   # Docker 忽略文件
+│   │   │   ├── docker-dev.bat  # Windows 開發腳本
+│   │   │   ├── docker-dev.sh   # Unix 開發腳本
+│   │   │   └── README.md       # Docker 使用說明
+│   │   ├── dev.bat             # 快捷啟動腳本 (Windows) 🆕
+│   │   └── dev.sh              # 快捷啟動腳本 (Unix) 🆕
+│   ├── .config/            # 開發工具配置 📁 新增
+│   │   ├── .markdownlint.json  # Markdown 檢查規則
+│   │   └── .stylelintrc.json   # CSS 檢查規則
+│   ├── .vscode/            # VS Code 配置
+│   │   ├── settings.json   # 編輯器設定
+│   │   ├── tasks.json      # 任務配置
+│   │   └── extensions.json # 推薦擴展
 │   ├── tools/              # 開發輔助腳本
 │   │   ├── run.sh          # 本地開發伺服器啟動
-│   │   └── test.sh         # 網站建置與測試
+│   │   ├── test.sh         # 網站建置與測試
+│   │   ├── clean.sh        # 專案清理腳本 🆕
+│   │   └── clean.bat       # Windows 清理腳本 🆕
 │   ├── docs/               # 專案文件與說明
+│   │   └── PROJECT_STRUCTURE.md  # 專案結構說明 🆕
 │   └── _plugins/           # 功能擴充插件
 │       └── posts-lastmod-hook.rb
 │
 └── 📄 專案管理文件
     ├── README.md           # 專案說明文件
     ├── LICENSE             # MIT 開源授權
-    └── jekyll-theme-chirpy.gemspec  # Ruby gem 規格
+    └── .gitignore          # Git 忽略文件 (已優化) ✨
 ```
 
 ### 內容組織說明
@@ -198,7 +162,7 @@ yu-codes.github.io/
 - /posts/machine-learning/transformer-family/
 - /posts/system-design/feature-store-design/
 ```
-
+---
 ## Jekyll 靜態網站生成器架構
 
 > **重要說明**: 本專案目前使用 Jekyll 作為靜態網站生成器。以下內容介紹 Jekyll 相關的檔案與目錄結構，方便日後遷移到其他生成器時進行替換。
@@ -284,7 +248,64 @@ Jekyll 處理流程：
 
 ## 環境設置與開發指南
 
-### 系統需求
+### 🐳 Docker 開發環境 (推薦)
+
+> **推薦使用 Docker**：無需在系統上安裝 Ruby 環境，確保開發環境一致性
+
+#### 系統需求
+- Docker Desktop (Windows/macOS/Linux)
+- Docker Compose (通常隨 Docker Desktop 一起安裝)
+
+#### 快速開始
+```bash
+# 1. 啟動開發服務器
+docker-dev.bat         # Windows
+# 或
+bash docker-dev.sh     # macOS/Linux
+
+# 2. 訪問網站
+# http://localhost:4000
+```
+
+#### Docker 命令參考
+```bash
+# 開發模式 (預設)
+.\dev.bat dev
+
+# 建置生產版本
+.\dev.bat build
+
+# 運行測試
+.\dev.bat test
+
+# 進入容器 shell (除錯用)
+.\dev.bat shell
+
+# 查看日誌
+.\dev.bat logs
+
+# 停止服務
+.\dev.bat stop
+
+# 清理 Docker 資源
+.\dev.bat clean
+```
+
+#### Docker 特色
+- ✅ 無需安裝 Ruby 環境
+- ✅ 一鍵啟動開發服務器
+- ✅ 即時重載 (LiveReload)
+- ✅ 自動安裝依賴
+- ✅ 環境隔離，不影響系統
+- ✅ 跨平台一致性
+
+---
+
+### 📦 傳統本地環境設置
+
+> **可選方式**：如果不想使用 Docker，可以直接在系統上安裝依賴
+
+#### 系統需求
 
 | 工具     | 版本需求 | 用途                |
 | -------- | -------- | ------------------- |
@@ -295,7 +316,7 @@ Jekyll 處理流程：
 | Node.js  | 16+      | 前端工具鏈          |
 | npm      | 8+       | JavaScript 套件管理 |
 
-### 本地開發環境設置
+#### 本地開發環境設置
 
 #### 1. Ruby 環境安裝
 
@@ -401,6 +422,29 @@ npm test                   # 執行所有測試
 3. 頁面佈局: 調整 `_layouts/` 和 `_includes/` 的 HTML 模板
 4. 網站配置: 修改 `_config.yml` 和 `_data/` 目錄的設定
 
+### 🧹 專案維護
+
+#### 清理命令
+```bash
+# 使用清理腳本
+.\tools\clean.bat           # Windows
+bash tools/clean.sh         # macOS/Linux
+
+# 手動清理
+rm -rf _site .jekyll-cache node_modules .bundle
+```
+
+#### 重新安裝依賴
+```bash
+# 重新安裝所有依賴
+npm install
+bundle install
+
+# 或使用 Docker（推薦）
+.\dev.bat clean
+.\dev.bat dev
+```
+
 ### 部署與測試
 
 #### 本地測試
@@ -462,7 +506,25 @@ bundle exec htmlproofer _site --disable-external
 
 ## 快速開始
 
-### 環境準備
+### 🐳 Docker 方式 (推薦)
+
+```bash
+# 1. 複製專案
+git clone https://github.com/yu-codes/yu-codes.github.io.git
+cd yu-codes.github.io
+
+# 2. 啟動 Docker 開發環境
+.\dev.bat               # Windows
+# 或
+bash dev.sh             # macOS/Linux
+
+# 3. 開啟瀏覽器
+# 訪問 http://localhost:4000
+# LiveReload: http://localhost:35729
+```
+
+### 📦 傳統方式
+
 ```bash
 # 1. 複製專案
 git clone https://github.com/yu-codes/yu-codes.github.io.git

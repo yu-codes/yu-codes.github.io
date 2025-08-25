@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  jekyll:
+    build: 
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "4000:4000"      # Jekyll 服務器
+      - "35729:35729"    # LiveReload
+    volumes:
+      - ..:/app           # 掛載專案目錄，實現即時同步
+      - /app/node_modules  # 避免 node_modules 衝突
+      - /app/.bundle     # 避免 bundle 衝突
+    environment:
+      - JEKYLL_ENV=development
+    command: bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling
+    stdin_open: true
+    tty: true
+
+  # 用於建置生產版本的服務
+  build:
+    build: 
+      context: ..
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ..:/app
+      - /app/node_modules
+      - /app/.bundle
+    environment:
+      - JEKYLL_ENV=production
+    command: bundle exec jekyll build
+    profiles: ["build"]  # 只在指定 profile 時啟動
+
+  # 用於運行測試的服務
+  test:
+    build: 
+      context: ..
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ..:/app
+      - /app/node_modules
+      - /app/.bundle
+    command: bundle exec htmlproofer _site --disable-external
+    depends_on:
+      - build
+    profiles: ["test"]  # 只在指定 profile 時啟動

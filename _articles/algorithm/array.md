@@ -3,6 +3,8 @@ title: "Python 陣列語法大全 + 所有常見演算法題型解析"
 date: 2025-05-13 16:40:00 +0800
 categories: [Algorithm]
 tags: [Array, Interview]
+description: "陣列是所有技術面試中最常見的資料結構，本文涵蓋 Python 語法與面試題型完整解析"
+pin: true
 ---
 
 # Python 陣列語法大全 + 所有常見演算法題型解析
