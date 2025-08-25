@@ -1,7 +1,7 @@
 ---
 title: "統計推論 Toolkit：AI 必備的估計與檢定方法"
 date: 2025-05-17 16:00:00 +0800
-categories: [AI Math Foundation]
+categories: [Machine Learning]
 tags: [統計推論, MLE, MAP, 假設檢定, Bootstrap, 交叉驗證]
 ---
 

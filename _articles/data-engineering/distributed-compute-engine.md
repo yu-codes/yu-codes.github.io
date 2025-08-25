@@ -1,7 +1,7 @@
 ---
 title: "分散式計算引擎全攻略：Spark、Flink、Beam、Shuffle、Skew 與調優實戰"
 date: 2025-05-21 17:00:00 +0800
-categories: [數據工程]
+categories: [Data Engineering]
 tags: [分散式計算, Spark, Flink, Beam, Structured Streaming, Shuffle, Broadcast, Skew, 調優]
 ---
 
@@ -51,11 +51,11 @@ df.groupBy("col").count().show()
 - 統一批次/流式 API，支援多執行引擎（Flink、Spark、Dataflow）
 - 強調可攜性與跨平台
 
-| 引擎   | 流批一體 | Event Time | Watermark | 適用場景         |
-|--------|----------|------------|-----------|------------------|
-| Spark  | 部分     | 支援       | 有限      | ETL、批次分析    |
-| Flink  | 原生     | 強         | 強        | 實時流式、複雜事件 |
-| Beam   | 統一 API | 強         | 強        | 跨平台、雲端     |
+| 引擎  | 流批一體 | Event Time | Watermark | 適用場景           |
+| ----- | -------- | ---------- | --------- | ------------------ |
+| Spark | 部分     | 支援       | 有限      | ETL、批次分析      |
+| Flink | 原生     | 強         | 強        | 實時流式、複雜事件 |
+| Beam  | 統一 API | 強         | 強        | 跨平台、雲端       |
 
 ---
 
@@ -112,13 +112,13 @@ result = large_df.join(broadcast(small_df), "key")
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Spark vs Flink| 架構與適用場景？ |
+| 主題                 | 常見問題                |
+| -------------------- | ----------------------- |
+| Spark vs Flink       | 架構與適用場景？        |
 | Structured Streaming | Exactly-once 如何實現？ |
-| Shuffle      | 原理與效能影響？ |
-| Broadcast    | 何時用？有何風險？ |
-| Skew         | 如何偵測與解決？ |
+| Shuffle              | 原理與效能影響？        |
+| Broadcast            | 何時用？有何風險？      |
+| Skew                 | 如何偵測與解決？        |
 
 ---
 

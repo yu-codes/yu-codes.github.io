@@ -1,7 +1,7 @@
 ---
 title: "Feature Store 設計全攻略：Feast、Tecton、SageMaker、表設計與一致性"
 date: 2025-05-22 16:00:00 +0800
-categories: [System Design & MLOps]
+categories: [System Design]
 tags: [Feature Store, Feast, Tecton, SageMaker, Offline Table, Online Table, Entity Key, TTL, Join Graph, 特徵一致性]
 ---
 

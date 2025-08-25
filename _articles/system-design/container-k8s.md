@@ -1,8 +1,8 @@
 ---
 title: "容器化與 Kubernetes：Pod 資源、GPU 調度、HPA/VPA/Autoscaler 全攻略"
 date: 2025-05-22 20:00:00 +0800
-categories: [System Design & MLOps]
-tags: [Kubernetes, 容器化, Pod, GPU 調度, HPA, VPA, Cluster Autoscaler, Node Selector, NVIDIA Plugin]
+categories: [System Design]
+tags: ["kubernetes", "containerization", "gpu-scheduling"]
 ---
 
 # 容器化與 Kubernetes：Pod 資源、GPU 調度、HPA/VPA/Autoscaler 全攻略

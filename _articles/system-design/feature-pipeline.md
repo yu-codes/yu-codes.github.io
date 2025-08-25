@@ -1,8 +1,8 @@
 ---
 title: "Feature Pipeline 實戰：Batch/Streaming 特徵、CEP、特徵一致性解法"
 date: 2025-05-22 15:00:00 +0800
-categories: [System Design & MLOps]
-tags: [Feature Pipeline, Batch Feature, Streaming Feature, CEP, 特徵一致性, Training-Serving Skew]
+categories: [System Design]
+tags: ["feature-pipeline", "batch-feature", "streaming-feature"]
 ---
 
 # Feature Pipeline 實戰：Batch/Streaming 特徵、CEP、特徵一致性解法

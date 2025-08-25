@@ -1,7 +1,7 @@
 ---
 title: "機率論 Essentials：AI 必備的隨機思維與分布直覺"
 date: 2025-05-17 15:00:00 +0800
-categories: [AI Math Foundation]
+categories: [Machine Learning]
 tags: [機率論, 隨機變數, 機率分布, 貝氏定理, 條件機率]
 ---
 

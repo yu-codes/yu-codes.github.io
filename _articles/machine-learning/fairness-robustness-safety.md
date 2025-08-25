@@ -1,7 +1,7 @@
 ---
 title: "Fairness, Robustness & 安全：對抗訓練、可重現性與模型安全全攻略"
 date: 2025-05-20 22:00:00 +0800
-categories: [模型訓練與優化]
+categories: [Machine Learning]
 tags: [公平性, Robustness, Adversarial Training, FGSM, PGD, Noise Injection, Feature Smoothing, 可重現性, Seed, Checkpoint]
 ---
 
@@ -97,13 +97,13 @@ def set_seed(seed=42):
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| 對抗訓練     | 原理與實作？ |
-| FGSM/PGD     | 差異與適用場景？ |
-| Noise Injection | 如何提升魯棒性？ |
-| 可重現性     | 如何設計 seed 與 checkpoint？ |
-| Feature Smoothing | 有何數學原理？ |
+| 主題              | 常見問題                      |
+| ----------------- | ----------------------------- |
+| 對抗訓練          | 原理與實作？                  |
+| FGSM/PGD          | 差異與適用場景？              |
+| Noise Injection   | 如何提升魯棒性？              |
+| 可重現性          | 如何設計 seed 與 checkpoint？ |
+| Feature Smoothing | 有何數學原理？                |
 
 ---
 

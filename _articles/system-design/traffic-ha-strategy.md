@@ -1,7 +1,7 @@
 ---
 title: "流量洪峰與高可用策略：負載均衡、熔斷降級、備援架構與數據同步"
 date: 2025-05-22 13:00:00 +0800
-categories: [System Design & MLOps]
+categories: [System Design]
 tags: [高可用, 負載均衡, 熔斷, 降級, 重試, 回溯, 多活, 冷備, 熱備, 數據同步]
 ---
 

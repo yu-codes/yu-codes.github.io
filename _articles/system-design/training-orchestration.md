@@ -1,7 +1,7 @@
 ---
 title: "訓練工作流 Orchestration：Airflow、Dagster、Kubeflow、資源預估與 Checkpoint"
 date: 2025-05-22 18:00:00 +0800
-categories: [System Design & MLOps]
+categories: [System Design]
 tags: [Orchestration, Airflow, Dagster, Kubeflow, Pipeline, Spot, On-Demand, Checkpoint, Resume]
 ---
 

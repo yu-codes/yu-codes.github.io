@@ -1,7 +1,7 @@
 ---
 title: "機率圖模型全解析：Bayesian Network、MRF、EM 與隱變量模型"
 date: 2025-05-17 20:00:00 +0800
-categories: [AI Math Foundation]
+categories: [Machine Learning]
 tags: [機率圖模型, Bayesian Network, Markov Random Field, EM, HMM, GMM]
 ---
 

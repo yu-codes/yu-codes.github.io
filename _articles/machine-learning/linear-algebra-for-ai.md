@@ -1,7 +1,7 @@
 ---
 title: "線性代數快攻：AI 必備的向量與矩陣基礎"
 date: 2025-05-17 12:00:00 +0800
-categories: [AI Math Foundation]
+categories: [Machine Learning]
 tags: [線性代數, 向量, 矩陣, 特徵值, SVD, PCA]
 ---
 

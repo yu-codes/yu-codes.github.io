@@ -1,7 +1,7 @@
 ---
 title: "參數初始化與正規化層：Xavier, He, BatchNorm, LayerNorm, ScaleNorm 全解析"
 date: 2025-05-20 16:00:00 +0800
-categories: [模型訓練與優化]
+categories: [Machine Learning]
 tags: [參數初始化, Xavier, He, LeCun, BatchNorm, LayerNorm, GroupNorm, RMSNorm, Weight Standardization, ScaleNorm]
 ---
 
@@ -97,13 +97,13 @@ gn = nn.GroupNorm(8, 32)
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Xavier vs He | 差異與適用場景？ |
-| BatchNorm    | 原理與優缺點？ |
-| LayerNorm    | 與 BatchNorm 差異？ |
-| GroupNorm    | 適用場景與設置？ |
-| Weight Standardization | 如何提升穩定性？ |
+| 主題                   | 常見問題            |
+| ---------------------- | ------------------- |
+| Xavier vs He           | 差異與適用場景？    |
+| BatchNorm              | 原理與優缺點？      |
+| LayerNorm              | 與 BatchNorm 差異？ |
+| GroupNorm              | 適用場景與設置？    |
+| Weight Standardization | 如何提升穩定性？    |
 
 ---
 

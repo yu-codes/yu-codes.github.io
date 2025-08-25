@@ -1,8 +1,8 @@
 ---
 title: "系統設計與 MLOps 挑戰題庫：13 章經典面試題與解法提示"
 date: 2025-05-22 23:59:00 +0800
-categories: [System Design & MLOps]
-tags: [面試題, 系統設計, MLOps, 白板題, 解題技巧]
+categories: [System Design]
+tags: ["interview-questions", "system-design", "mlops"]
 ---
 
 # 系統設計與 MLOps 挑戰題庫：13 章經典面試題與解法提示

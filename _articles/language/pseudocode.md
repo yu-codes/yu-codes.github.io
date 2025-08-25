@@ -1,7 +1,7 @@
 ---
 title: "技術面試兩大實戰挑戰：Pseudocode 語法全收錄 + Python 環境建立完全指南"
 date: 2025-05-13 15:00:00 +0800
-categories: [Interview]
+categories: [Language]
 tags: [Pseudocode, Python, Algorithm, 開發環境]
 ---
 
@@ -27,17 +27,17 @@ tags: [Pseudocode, Python, Algorithm, 開發環境]
 
 ### 🧱 Pseudocode 基本語法對照表
 
-| 類型         | 範例                         |
-|--------------|------------------------------|
-| 變數宣告     | `SET count TO 0`             |
-| 條件判斷     | `IF x > 0 THEN ... END IF`   |
-| 迴圈         | `FOR i FROM 1 TO n DO ...`   |
-| While        | `WHILE not_empty DO ...`     |
-| 函式定義     | `FUNCTION sum(a, b)`         |
-| 回傳值       | `RETURN a + b`               |
-| 陣列存取     | `array[i]`                   |
-| 清單建立     | `SET result TO EMPTY LIST`   |
-| 例外處理     | `TRY ... CATCH error`        |
+| 類型     | 範例                       |
+| -------- | -------------------------- |
+| 變數宣告 | `SET count TO 0`           |
+| 條件判斷 | `IF x > 0 THEN ... END IF` |
+| 迴圈     | `FOR i FROM 1 TO n DO ...` |
+| While    | `WHILE not_empty DO ...`   |
+| 函式定義 | `FUNCTION sum(a, b)`       |
+| 回傳值   | `RETURN a + b`             |
+| 陣列存取 | `array[i]`                 |
+| 清單建立 | `SET result TO EMPTY LIST` |
+| 例外處理 | `TRY ... CATCH error`      |
 
 ---
 

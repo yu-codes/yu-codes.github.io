@@ -1,7 +1,7 @@
 ---
 title: "統計學在 ML 實務：模型評估、偏差-變異與信賴區間全攻略"
 date: 2025-05-17 19:00:00 +0800
-categories: [AI Math Foundation]
+categories: [Machine Learning]
 tags: [統計學, 偏差-變異, 評估指標, 置信帶, 預測區間]
 ---
 

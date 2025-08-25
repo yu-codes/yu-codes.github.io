@@ -2,7 +2,7 @@
 title: "資料增強與合成全攻略：影像、NLP、音訊與自動策略搜尋"
 date: 2025-05-20 18:00:00 +0800
 categories: [Machine Learning]
-tags: [資料增強, Data Augmentation, MixUp, CutMix, SpecAug, RandAugment, CTAugment, NLP, Audio]
+tags: ["data-augmentation", "mixup", "cutmix"]
 ---
 
 # 資料增強與合成全攻略：影像、NLP、音訊與自動策略搜尋

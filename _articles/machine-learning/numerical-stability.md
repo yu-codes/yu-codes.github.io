@@ -1,7 +1,7 @@
 ---
 title: "數值穩定技巧全攻略：Log-Sum-Exp、Gradient Clipping、混合精度與防呆實戰"
 date: 2025-05-20 17:00:00 +0800
-categories: [模型訓練與優化]
+categories: [Machine Learning]
 tags: [數值穩定, Log-Sum-Exp, Softmax, Gradient Clipping, FP16, BF16, 混合精度, Underflow, Overflow]
 ---
 
@@ -103,13 +103,13 @@ for data, target in dataloader:
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Log-Sum-Exp  | 原理與數值優勢？ |
-| Softmax      | 如何防止 underflow/overflow？ |
-| Gradient Clipping | Value vs Norm 差異？ |
-| 混合精度     | FP16/BF16 優缺點？ |
-| 數值不穩定   | 常見來源與解法？ |
+| 主題              | 常見問題                      |
+| ----------------- | ----------------------------- |
+| Log-Sum-Exp       | 原理與數值優勢？              |
+| Softmax           | 如何防止 underflow/overflow？ |
+| Gradient Clipping | Value vs Norm 差異？          |
+| 混合精度          | FP16/BF16 優缺點？            |
+| 數值不穩定        | 常見來源與解法？              |
 
 ---
 

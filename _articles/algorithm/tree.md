@@ -2,7 +2,7 @@
 title: "Tree & Recursion 全攻略：Python 實作語法 + 經典題型分類解析"
 date: 2025-05-13 17:40:00 +0800
 categories: [Algorithm]
-tags: [Binary Tree, Recursion, DFS, 資料結構, 演算法]
+tags: ["binary-tree", "recursion", "dfs"]
 ---
 
 # Tree & Recursion 全攻略：Python 實作語法 + 經典題型分類解析
@@ -131,13 +131,13 @@ def buildTree(preorder, inorder):
 
 ## 📑 題型彙整表
 
-| 題型       | 常見題目關鍵詞                      |
-| -------- | ---------------------------- |
-| 遍歷       | Inorder, Preorder, Postorder |
-| 計算性質     | 最大深度、葉子節點、路徑和                |
-| 判斷結構     | 是否為同一棵、鏡像、平衡樹                |
-| 構建 / 還原樹 | 從遍歷還原樹、BST 建構                |
-| 回傳型遞迴    | 是否存在、回傳 LCA、找符合條件路徑          |
+| 題型          | 常見題目關鍵詞                     |
+| ------------- | ---------------------------------- |
+| 遍歷          | Inorder, Preorder, Postorder       |
+| 計算性質      | 最大深度、葉子節點、路徑和         |
+| 判斷結構      | 是否為同一棵、鏡像、平衡樹         |
+| 構建 / 還原樹 | 從遍歷還原樹、BST 建構             |
+| 回傳型遞迴    | 是否存在、回傳 LCA、找符合條件路徑 |
 
 ---
 

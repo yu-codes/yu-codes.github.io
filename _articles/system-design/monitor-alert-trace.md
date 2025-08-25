@@ -1,8 +1,8 @@
 ---
 title: "監控・告警・追蹤全攻略：Prometheus、Grafana、ELK、Loki、Drift 偵測"
 date: 2025-05-22 22:00:00 +0800
-categories: [System Design & MLOps]
-tags: [監控, 告警, 追蹤, Prometheus, Grafana, ELK, Loki, Jaeger, Model Drift, Data Drift]
+categories: [System Design]
+tags: ["monitoring", "alerting", "tracing"]
 ---
 
 # 監控・告警・追蹤全攻略：Prometheus、Grafana、ELK、Loki、Drift 偵測

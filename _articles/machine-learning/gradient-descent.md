@@ -2,7 +2,7 @@
 title: "梯度下降家譜：SGD、Momentum、Adam、Adaptive 優化器全解析"
 date: 2025-05-20 13:00:00 +0800
 categories: [Machine Learning]
-tags: [梯度下降, SGD, Momentum, Adam, RMSProp, Nesterov, AdaGrad, AdamW, 收斂, 泛化]
+tags: ["gradient-descent", "sgd", "adam"]
 ---
 
 # 梯度下降家譜：SGD、Momentum、Adam、Adaptive 優化器全解析

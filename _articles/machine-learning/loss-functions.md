@@ -1,7 +1,7 @@
 ---
 title: "損失函數百寶箱：回歸、分類、對比學習與自訂 Loss 全解析"
 date: 2025-05-20 12:00:00 +0800
-categories: [模型訓練與優化]
+categories: [Machine Learning]
 tags: [損失函數, MSE, MAE, Huber, Cross-Entropy, Focal Loss, Triplet, Contrastive, InfoNCE, 可導性, 穩定性]
 ---
 
@@ -132,14 +132,14 @@ def custom_loss(y_pred, y_true):
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| MSE vs MAE   | 何時選用？對離群值敏感度？ |
-| Huber Loss   | 為何更穩健？ |
-| Cross-Entropy| 數學推導與應用？ |
-| Focal Loss   | 如何解決類別不平衡？ |
-| Triplet/Contrastive | 適用場景與數學原理？ |
-| 自訂 Loss    | 如何設計可導且穩定？ |
+| 主題                | 常見問題                   |
+| ------------------- | -------------------------- |
+| MSE vs MAE          | 何時選用？對離群值敏感度？ |
+| Huber Loss          | 為何更穩健？               |
+| Cross-Entropy       | 數學推導與應用？           |
+| Focal Loss          | 如何解決類別不平衡？       |
+| Triplet/Contrastive | 適用場景與數學原理？       |
+| 自訂 Loss           | 如何設計可導且穩定？       |
 
 ---
 

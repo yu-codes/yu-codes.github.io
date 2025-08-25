@@ -1,7 +1,7 @@
 ---
 title: "最適化基石：AI 訓練的數學與演算法核心"
 date: 2025-05-17 14:00:00 +0800
-categories: [AI Math Foundation]
+categories: [Machine Learning]
 tags: [最適化, 凸集, Lagrange, SGD, Adam, Learning Rate]
 ---
 

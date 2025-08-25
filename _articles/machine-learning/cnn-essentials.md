@@ -2,7 +2,7 @@
 title: "卷積網路精要：CNN 結構、演進與應用全解析"
 date: 2025-05-19 13:00:00 +0800
 categories: [Machine Learning]
-tags: [CNN, 卷積, 池化, ResNet, EfficientNet, Inception, TCN, WaveNet]
+tags: ["cnn", "convolution", "pooling"]
 ---
 
 # 卷積網路精要：CNN 結構、演進與應用全解析

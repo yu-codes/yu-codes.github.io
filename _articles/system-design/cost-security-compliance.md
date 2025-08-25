@@ -1,7 +1,7 @@
 ---
 title: "成本・安全・合規全攻略：GPU 成本、IAM、Secrets、GDPR 刪數據與審計"
 date: 2025-05-22 23:00:00 +0800
-categories: [System Design & MLOps]
+categories: [System Design]
 tags: [成本, 安全, 合規, GPU, Spot, IAM, Secrets, GDPR, 審計, 最小權限, 帳號隔離]
 ---
 

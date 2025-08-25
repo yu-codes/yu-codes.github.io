@@ -1,7 +1,7 @@
 ---
 title: "ML 數學經典面試題庫：10 章精選題與解法直覺"
 date: 2025-05-17 21:00:00 +0800
-categories: [AI Math Foundation]
+categories: [Machine Learning]
 tags: [面試題, AI 數學, 解題技巧, 直覺, 經典題庫]
 ---
 

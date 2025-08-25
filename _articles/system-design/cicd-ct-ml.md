@@ -1,7 +1,7 @@
 ---
 title: "CI/CD/CT for ML：Code/Data/Model CI、藍綠/Canary 部署與持續訓練"
 date: 2025-05-22 19:00:00 +0800
-categories: [System Design & MLOps]
+categories: [System Design]
 tags: [CI/CD, CT, MLOps, Data Validation, Model CI, Canary, Blue-Green, Shadow Deployment, Continuous Training]
 ---
 

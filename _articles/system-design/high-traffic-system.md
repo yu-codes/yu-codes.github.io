@@ -1,7 +1,7 @@
 ---
 title: "打造高流量系統的系統設計終極指南"
 date: 2025-05-11 10:30:00 +0800
-categories: [System Design, Scalability]
+categories: [System Design]
 tags: [High Traffic, Architecture, Backend, Cache, Load Balancing, DevOps]
 description: "從基礎到進階，完整介紹打造高可用、高擴展、高效能系統的各種設計原則與技術選型"
 pin: true

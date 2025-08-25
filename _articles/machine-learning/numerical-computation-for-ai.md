@@ -1,7 +1,7 @@
 ---
 title: "數值計算與穩定性：AI 實作必備的數值技巧與陷阱"
 date: 2025-05-17 18:00:00 +0800
-categories: [AI Math Foundation]
+categories: [Machine Learning]
 tags: [數值計算, 浮點誤差, Log-Sum-Exp, Gradient Clipping, 稀疏矩陣]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "線上-離線分離設計：離線訓練、線上推論、特徵更新與 Lambda/Kappa 架構"
 date: 2025-05-22 14:00:00 +0800
-categories: [System Design & MLOps]
+categories: [System Design]
 tags: [線上離線分離, 離線訓練, 線上推論, 特徵更新, Lambda 架構, Kappa 架構, Streaming, Call Graph]
 ---
 

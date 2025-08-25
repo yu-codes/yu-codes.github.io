@@ -2,7 +2,7 @@
 title: "Stack & Queue 全攻略：Python 語法大全 + 所有常見演算法題型解析"
 date: 2025-05-13 17:20:00 +0800
 categories: [Algorithm]
-tags: [Stack, Queue, Python, 資料結構, 面試]
+tags: ["stack", "queue", "data-structure"]
 ---
 
 # Stack & Queue 全攻略：Python 語法大全 + 所有常見演算法題型解析
@@ -142,13 +142,13 @@ def nextGreater(nums):
 
 ## 📑 題型彙整表
 
-| 類型              | 常見題目              |
-| --------------- | ----------------- |
-| Stack 配對/回溯     | 括號配對、字串重構、Undo 模擬 |
-| Stack 運算處理      | 逆波蘭式、計算器          |
-| Queue 擴散/BFS    | 樹遍歷、網格傳播、感染計算     |
-| Monotonic Stack | 下一個更大、最大矩形        |
-| 滑動窗口 Queue      | 最大值、最短長度          |
+| 類型            | 常見題目                      |
+| --------------- | ----------------------------- |
+| Stack 配對/回溯 | 括號配對、字串重構、Undo 模擬 |
+| Stack 運算處理  | 逆波蘭式、計算器              |
+| Queue 擴散/BFS  | 樹遍歷、網格傳播、感染計算    |
+| Monotonic Stack | 下一個更大、最大矩形          |
+| 滑動窗口 Queue  | 最大值、最短長度              |
 
 ---
 

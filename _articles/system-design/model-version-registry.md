@@ -1,7 +1,7 @@
 ---
 title: "模型版本與 Registry：MLflow、SageMaker、Semantic Versioning 與 Promote 流程"
 date: 2025-05-22 17:00:00 +0800
-categories: [System Design & MLOps]
+categories: [System Design]
 tags: [模型版本, Model Registry, MLflow, SageMaker, Semantic Versioning, Promote, Staging, Production]
 ---
 

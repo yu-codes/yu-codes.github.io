@@ -2,7 +2,7 @@
 title: "學習率策略全解析：Step, Cosine, Cyclical, Warm-up 與 LR Finder"
 date: 2025-05-20 14:00:00 +0800
 categories: [Machine Learning]
-tags: [學習率, Learning Rate, Step Decay, Cosine Annealing, Warm-up, Cyclical, One-Cycle, LR Finder]
+tags: ["learning-rate", "step-decay", "cosine-annealing"]
 ---
 
 # 學習率策略全解析：Step, Cosine, Cyclical, Warm-up 與 LR Finder

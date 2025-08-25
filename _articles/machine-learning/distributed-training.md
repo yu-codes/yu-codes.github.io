@@ -1,8 +1,8 @@
 ---
 title: "分散式與大規模訓練全攻略：Data/Model/Pipeline Parallel, ZeRO, FSDP, Elastic Training"
 date: 2025-05-20 19:00:00 +0800
-categories: [模型訓練與優化]
-tags: [分散式訓練, Data Parallel, Model Parallel, Pipeline Parallel, ZeRO, FSDP, Megatron-LM, Elastic Training, Checkpoint Sharding]
+categories: [Machine Learning]
+tags: ["distributed-training", "model-parallel", "pipeline-parallel"]
 ---
 
 # 分散式與大規模訓練全攻略：Data/Model/Pipeline Parallel, ZeRO, FSDP, Elastic Training
@@ -94,13 +94,13 @@ model = torch.nn.parallel.DistributedDataParallel(model)
 
 ## 面試熱點與經典問題
 
-| 主題         | 常見問題 |
-|--------------|----------|
-| Data/Model/Pipeline | 差異與適用場景？ |
-| ZeRO         | Stage 1-3 有何不同？ |
-| FSDP         | 與 DDP/ZeRO 差異？ |
-| Gradient Accumulation | 作用與實作？ |
-| Elastic Training | 如何提升容錯？ |
+| 主題                  | 常見問題             |
+| --------------------- | -------------------- |
+| Data/Model/Pipeline   | 差異與適用場景？     |
+| ZeRO                  | Stage 1-3 有何不同？ |
+| FSDP                  | 與 DDP/ZeRO 差異？   |
+| Gradient Accumulation | 作用與實作？         |
+| Elastic Training      | 如何提升容錯？       |
 
 ---
 

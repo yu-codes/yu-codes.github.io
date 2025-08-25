@@ -1,7 +1,7 @@
 ---
 title: "預訓練策略與微調全攻略：Feature-based、Fine-tune、Prompt-tune 與 Llama 案例"
 date: 2025-05-19 17:00:00 +0800
-categories: [Machine Learning]
+categories: [LLM]
 tags: [預訓練, 微調, Feature-based, Fine-tune, Prompt-tune, Llama, 收斂, 記憶體瓶頸]
 ---
 

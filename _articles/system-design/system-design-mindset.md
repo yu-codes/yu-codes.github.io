@@ -1,7 +1,7 @@
 ---
 title: "系統設計思維起手式：擴充、CAP/PACELC、SLA/SLO/SLI、三層到微服務"
 date: 2025-05-22 12:00:00 +0800
-categories: [System Design & MLOps]
+categories: [System Design]
 tags: [系統設計, CAP, PACELC, SLA, SLO, SLI, 微服務, 三層架構, 擴充]
 ---
 
